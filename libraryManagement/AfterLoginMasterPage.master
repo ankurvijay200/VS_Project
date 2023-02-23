@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AfterLoginMasterPage.master.cs" Inherits="AfterLoginMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-decoration: none;
+        }
+        .style3
+        {
+            text-align: center;
+        }
+        .style4
+        {
+            color: #000000;
+            text-decoration: none;
+        }
+        .style5
+        {
+            background-color: #00FFFF;
+        }
+    </style>
+</head>
+<body style="background-color: #00FFFF">
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" class="style1">
+            <tr>
+                <td>
+                    <table class="style1">
+                        <tr>
+                            <td style="font-family: Arial; font-size: x-large; color: #FFFFFF; background-color: #CC0000">
+                                Aravali Institute Of Technical Studies, Udaipur.</td>
+                            <td style="text-align: center; color: #FFFFFF; background-color: #CC0000">
+                                <asp:LinkButton ID="LinkButton1" runat="server" CssClass="style2" 
+                                    style="color: #FFFFFF; font-family: Arial" PostBackUrl="~/loginPage.aspx">Logout</asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="1" cellpadding="0" cellspacing="0" class="style1">
+                        <tr>
+                            <td class="style3">
+                                <asp:HyperLink ID="HyperLink1" runat="server" 
+                                    NavigateUrl="~/HomeAfterLogin.aspx" CssClass="style4" Width="100%">Home</asp:HyperLink>
+                            </td>
+                            <td class="style3">
+                                <asp:DropDownList ID="DropDownList1" runat="server" 
+                                    onselectedindexchanged="DropDownList1_SelectedIndexChanged" 
+                                    AutoPostBack="True" CssClass="style5" Width="100%">
+                                    <asp:ListItem>User Options</asp:ListItem>
+                                    <asp:ListItem>All Users</asp:ListItem>
+                                    <asp:ListItem>New User</asp:ListItem>
+                                    <asp:ListItem>Search User</asp:ListItem>
+                                </asp:DropDownList>
+                            </td>
+                            <td class="style3">
+                                <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" 
+                                    CssClass="style5" onselectedindexchanged="DropDownList2_SelectedIndexChanged" 
+                                    Width="100%">
+                                    <asp:ListItem>Book Options</asp:ListItem>
+                                    <asp:ListItem>Issue Book</asp:ListItem>
+                                    <asp:ListItem>New Book</asp:ListItem>
+                                    <asp:ListItem>All Books</asp:ListItem>
+                                    <asp:ListItem>Search Book</asp:ListItem>
+                                </asp:DropDownList>
+                            </td>
+                            <td class="style3">
+                                <asp:HyperLink ID="HyperLink5" runat="server" CssClass="style4" 
+                                    NavigateUrl="~/fineDetails.aspx" Width="100%">Fine Detail</asp:HyperLink>
+                            </td>
+                            <td class="style3">
+                                <asp:HyperLink ID="HyperLink4" runat="server" CssClass="style4" 
+                                    NavigateUrl="~/contactAfterLogin.aspx" Width="100%">Contact</asp:HyperLink>
+                            </td>
+                            <td class="style3">
+                                <asp:HyperLink ID="HyperLink3" runat="server" CssClass="style4" 
+                                    NavigateUrl="~/yourProfile.aspx" Width="100%">Your Profile</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

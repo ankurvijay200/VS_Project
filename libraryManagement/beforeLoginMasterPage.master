@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="beforeLoginMasterPage.master.cs" Inherits="beforeLoginMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+            background-color: #CC0000;
+        }
+        .style4
+        {
+            color: #FFFFFF;
+            background-color: #CC0000;
+        }
+        .style5
+        {
+            text-align: center;
+        }
+        .style6
+        {
+            color: #000000;
+            text-decoration: none;
+        }
+        .style8
+        {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-color: #00FFFF">
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" class="style1">
+            <tr>
+                <td>
+                    <table class="style1">
+                        <tr>
+                            <td class="style4" 
+                                style="font-family: Arial; font-weight: 700; font-style: italic; font-size: x-large" 
+                                width="80%">
+                                Aravali Institute Of Technical Studes, Udaipur</td>
+                            <td class="style2">
+                                <asp:HyperLink ID="HyperLink4" runat="server" CssClass="style8" 
+                                    NavigateUrl="~/loginPage.aspx" style="color: #FFFFFF">Login</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="1px" cellpadding="0" cellspacing="0" class="style1">
+                        <tr>
+                            <td style="text-align: center">
+                                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="style6" 
+                                    NavigateUrl="~/loginPage.aspx">Home</asp:HyperLink>
+                            </td>
+                            <td class="style5">
+                                <asp:HyperLink ID="HyperLink2" runat="server" CssClass="style6" 
+                                    NavigateUrl="~/About.aspx">About</asp:HyperLink>
+                            </td>
+                            <td class="style5">
+                                <asp:HyperLink ID="HyperLink3" runat="server" CssClass="style6" 
+                                    NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
