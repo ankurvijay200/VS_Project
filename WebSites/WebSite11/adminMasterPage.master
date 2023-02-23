@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminMasterPage.master.cs" Inherits="adminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+        .style3
+        {
+            text-align: center;
+            height: 26px;
+        }
+        .style4
+        {
+            text-decoration: none;
+            color: #000000;
+        }
+        .style5
+        {
+            text-align: center;
+            height: 26px;
+            text-decoration: none;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table bgcolor="Aqua" class="style1" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+            <td colspan="11" 
+                
+                style="font-size: xx-large; font-family: Algerian; text-align: center; color: #FFFFFF; background-color: #CC0000">
+                My Library</td>
+        </tr>
+        <tr>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="style3" 
+                    style="text-decoration: none; color: #000000" 
+                    NavigateUrl="~/newStudent.aspx">New Student</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink2" runat="server" CssClass="style3" 
+                    NavigateUrl="~/SearchStudent.aspx" 
+                    style="text-decoration: none; color: #000000">Search Student</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink3" runat="server" CssClass="style3" 
+                    NavigateUrl="~/ListOfAllStudents.aspx" 
+                    style="text-decoration: none; color: #000000">All Student</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink4" runat="server" CssClass="style3" 
+                    NavigateUrl="~/newBook.aspx" style="text-decoration: none; color: #000000">New Book</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink5" runat="server" CssClass="style3" 
+                    NavigateUrl="~/searchBookAsAdmin.aspx" 
+                    style="text-decoration: none; color: #000000">Search Book</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink6" runat="server" CssClass="style3" 
+                    NavigateUrl="~/allBooksAsAdmin.aspx" 
+                    style="text-decoration: none; color: #000000">All Books</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink7" runat="server" CssClass="style3" 
+                    NavigateUrl="~/issuebook.aspx" style="text-decoration: none; color: #000000">Issue Book</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink8" runat="server" CssClass="style3" 
+                    NavigateUrl="~/subbmitBook.aspx" 
+                    style="text-decoration: none; color: #000000">Submit Book</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink9" runat="server" CssClass="style5" 
+                    NavigateUrl="~/ListOfAllIssuedBooks.aspx">Issued Books</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink11" runat="server" CssClass="style4" 
+                    NavigateUrl="~/requestsAsAdmin.aspx">Requests</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink10" runat="server" CssClass="style3" 
+                    NavigateUrl="~/Logout.aspx" 
+                    style="text-decoration: none; color: #000000">Logout</asp:HyperLink>
+            </td>
+        </tr>
+    </table>
+<div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

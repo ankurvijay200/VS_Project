@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="AdminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            background-color: #666666;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+        .style3
+        {
+            color: #FFFFFF;
+        }
+        .style5
+        {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table bgcolor="#00FF99" class="style1" border="1" cellpadding="0" 
+        cellspacing="0">
+        <tr>
+            <td colspan="13" 
+                style="text-align: center; font-family: Algerian; font-size: xx-large; color: #FFFFFF; background-color: #000000">
+                    Inventory Automation system</td>
+        </tr>
+        <tr>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="style5" 
+                    NavigateUrl="~/HomeAdmin.aspx">Home</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink2" runat="server" CssClass="style3">New Supplier</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink3" runat="server" CssClass="style3">All Supplier</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink4" runat="server" CssClass="style3">New Customer</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink13" runat="server" style="color: #FFFFFF">Search Supplier</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink5" runat="server" CssClass="style3">All Customer</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink6" runat="server" CssClass="style3">Search Customer</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink7" runat="server" CssClass="style3">New Products</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink8" runat="server" CssClass="style3">All Products</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink9" runat="server" CssClass="style3">Search Product</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink10" runat="server" CssClass="style3">Sell</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink11" runat="server" CssClass="style3">View </asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink12" runat="server" CssClass="style3">Logout</asp:HyperLink>
+            </td>
+        </tr>
+    </table>
+<div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

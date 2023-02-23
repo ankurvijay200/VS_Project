@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DataTransferAmongPagesMasterPage.master.cs" Inherits="DataTransferAmongPagesMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>   
+        <table bgcolor="Aqua" class="style1">
+            <tr>
+                <td colspan="6" 
+                    style="font-family: Algerian; font-size: xx-large; color: #FFFFFF; text-align: center; background-color: #CC0000">
+                    Data pass among pages</td>
+            </tr>
+            <tr>
+                <td class="style2" width="16%">
+                    <asp:Button ID="Button1" runat="server" BackColor="Aqua" BorderWidth="0px" 
+                        Text="Input" Width="90%" onclick="Button1_Click" />
+                </td>
+                <td class="style2" width="16%">
+                    <asp:Button ID="Button2" runat="server" BackColor="Aqua" BorderWidth="0px" 
+                        Text="Values" Width="90%" onclick="Button2_Click" />
+                </td>
+                <td class="style2" width="16%">
+                    <asp:Button ID="Button3" runat="server" BackColor="Aqua" BorderWidth="0px" 
+                        Text="Addition" Width="90%" onclick="Button3_Click" />
+                </td>
+                <td class="style2" width="16%">
+                    <asp:Button ID="Button4" runat="server" BackColor="Aqua" BorderWidth="0px" 
+                        Text="Subtraction" Width="90%" onclick="Button4_Click" />
+                </td>
+                <td class="style2" width="16%">
+                    <asp:Button ID="Button5" runat="server" BackColor="Aqua" BorderWidth="0px" 
+                        Text="Multiplication" Width="90%" onclick="Button5_Click" />
+                </td>
+                <td class="style2" width="16%">
+                    <asp:Button ID="Button6" runat="server" BackColor="Aqua" BorderWidth="0px" 
+                        Text="Division" Width="90%" onclick="Button6_Click" />
+                </td>
+            </tr>
+        </table>
+    
+    </div>
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

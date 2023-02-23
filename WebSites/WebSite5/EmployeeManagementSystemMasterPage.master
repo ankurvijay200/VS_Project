@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="EmployeeManagementSystemMasterPage.master.cs" Inherits="EmployeeManagementSystemMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+            <table bgcolor="Aqua" class="style1">
+                <tr>
+                    <td colspan="6" 
+                        style="text-align: center; font-family: Algerian; font-size: xx-large; color: #FFFFFF; background-color: #CC0000">
+                        Employee Management System</td>
+                </tr>
+                <tr>
+                    <td width="16.6%" class="style2">
+                        <a href="home.aspx" style="text-decoration: none; color: #000000;">Home</a></td>
+                    <td width="16.6%" class="style2">
+                        <a href="Register.aspx" style="text-decoration: none; color: #000000;">Register</a></td>
+                    <td width="16.6%" class="style2">
+                        <a href="Search.aspx" style="text-decoration: none; color: #000000;">Search</a></td>
+                    <td width="16.6%" class="style2">
+                        <a href="Display.aspx" style="text-decoration: none; color: #000000;">Display</a></td>
+                    <td width="16.6%" class="style2">
+                        <a href="Edit.aspx" style="text-decoration: none; color: #000000;">Edit</a></td>
+                    <td width="16.6%" class="style2">
+                        <a href="Logout.aspx" style="text-decoration: none; color: #000000;">Logout</a></td>
+                </tr>
+            </table>
+    </div>
+    </form>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+
+</body>
+</html>

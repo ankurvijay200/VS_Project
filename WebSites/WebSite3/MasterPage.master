@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <!--this is test of my master page<asp:Button ID="Button1" 
+            runat="server" PostBackUrl="~/Default.aspx" Text="Button" />
+        <asp:Button ID="Button2" runat="server" Text="Button" />
+        <asp:Button ID="Button3" runat="server" Text="Button" />
+        <br /> -->
+        <table class="style1">
+            <tr>
+                <td style="font-family: Algerian; font-size: xx-large; color: #FFFFFF; background-color: #CC0000;">
+                    <table class="style1">
+                        <tr>
+                            <td width="80%">
+                    MYschool.com</td>
+                            <td style="text-align: center">
+                                <asp:Label ID="Label1" runat="server"></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+&nbsp;<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

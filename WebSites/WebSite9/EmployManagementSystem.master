@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="EmployManagementSystem.master.cs" Inherits="EmployManagementSystem" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+        .style3
+        {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<form id="form1" runat="server">
+    <table bgcolor="Aqua" class="style1" border="1" cellpadding="1" cellspacing="0">
+        <tr>
+            <td colspan="5" 
+                style="font-family: Algerian; font-size: xx-large; color: #FFFFFF; text-align: center; background-color: #CC0000">
+                Employee&nbsp; management system</td>
+        </tr>
+        <tr>
+            <td class="style2" width="20%">
+                <asp:HyperLink ID="HyperLink1" runat="server" Width="90%" CssClass="style3" 
+                    ForeColor="Black" NavigateUrl="~/RegisterNewEmployee.aspx">New Employee</asp:HyperLink>
+            </td>
+            <td class="style2" width="20%">
+                <asp:HyperLink ID="HyperLink2" runat="server" Width="90%" CssClass="style3" 
+                    ForeColor="Black" NavigateUrl="~/SearchEmploy.aspx">Search</asp:HyperLink>
+            </td>
+            <td class="style2" width="20%">
+                <asp:HyperLink ID="HyperLink3" runat="server" Width="90%" CssClass="style3" 
+                    ForeColor="Black" NavigateUrl="~/AllEmployee.aspx">All</asp:HyperLink>
+            </td>
+            <td class="style2" width="20%">
+                <asp:HyperLink ID="HyperLink4" runat="server" Width="90%" CssClass="style3" 
+                    ForeColor="Black" NavigateUrl="~/EditEmployee.aspx">Edit</asp:HyperLink>
+            </td>
+            <td class="style2" width="20%">
+                <asp:HyperLink ID="HyperLink5" runat="server" Width="90%" CssClass="style3" 
+                    ForeColor="Black" NavigateUrl="~/EmployeeLogout.aspx">Logout</asp:HyperLink>
+            </td>
+        </tr>
+    </table>
+<div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

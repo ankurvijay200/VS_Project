@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LIbraryManagementSyastemMaster.master.cs" Inherits="LIbraryManagementSyastemMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+        .style3
+        {
+            text-decoration: none;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+<table class="style1" bgcolor="Aqua" border="1" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="10" 
+                        style="font-family: Algerian; font-size: xx-large; color: #FFFFFF; text-align: center; background-color: #CC0000">
+                        LIbrary management syastem</td>
+                </tr>
+                <tr>
+                    <td class="style2">
+                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="style3" 
+                            NavigateUrl="~/AddNewStudent.aspx">New Student</asp:HyperLink>
+                    </td>
+                    <td class="style2">
+                        <asp:HyperLink ID="HyperLink2" runat="server" CssClass="style3" 
+                            NavigateUrl="~/SearchStudent.aspx">Search Student</asp:HyperLink>
+                    </td>
+                    <td class="style2">
+                        <asp:HyperLink ID="HyperLink3" runat="server" CssClass="style3" 
+                            NavigateUrl="~/ListOfAllStudents.aspx">All Student</asp:HyperLink>
+                    </td>
+                    <td class="style2">
+                        <asp:HyperLink ID="HyperLink4" runat="server" CssClass="style3" 
+                            NavigateUrl="~/AddNewBook.aspx">New Book</asp:HyperLink>
+                    </td>
+                    <td class="style2">
+                        <asp:HyperLink ID="HyperLink5" runat="server" CssClass="style3" 
+                            NavigateUrl="~/SearchBook.aspx">Search Book</asp:HyperLink>
+                    </td>
+                    <td class="style2">
+                        <asp:HyperLink ID="HyperLink6" runat="server" CssClass="style3" 
+                            NavigateUrl="~/ListOfAllBooks.aspx">All Books</asp:HyperLink>
+                    </td>
+                    <td class="style2">
+                        <asp:HyperLink ID="HyperLink7" runat="server" CssClass="style3" 
+                            NavigateUrl="~/issuebook.aspx">Issue Book</asp:HyperLink>
+                    </td>
+                    <td class="style2">
+                        <asp:HyperLink ID="HyperLink8" runat="server" CssClass="style3" 
+                            NavigateUrl="~/SubmitBook.aspx">Submit Book</asp:HyperLink>
+                    </td>
+                    <td class="style2">
+                        <asp:HyperLink ID="HyperLink9" runat="server" CssClass="style3" 
+                            NavigateUrl="~/ListOfIssuedBookss.aspx">Issued Books</asp:HyperLink>
+                    </td>
+                    <td class="style2">
+                        <asp:HyperLink ID="HyperLink10" runat="server" CssClass="style3" 
+                            NavigateUrl="~/libraryLogout.aspx">Logout</asp:HyperLink>
+                    </td>
+                </tr>
+            </table>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

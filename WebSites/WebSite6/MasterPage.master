@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table bgcolor="Aqua" class="style1" border="1" cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="6" 
+                    style="font-family: Algerian; font-size: xx-large; color: #FFFFFF; text-align: center; background-color: #CC0000">
+                    <table border="0" cellpadding="0" cellspacing="0" class="style1">
+                        <tr>
+                            <td width="80%">
+                    Employee management system</td>
+                            <td>
+                                <asp:Label ID="Label1" runat="server" 
+                                    style="font-family: Arial; font-size: medium"></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" width="16.6%">
+                    <a href="home.aspx" style="text-decoration: none; color: #000000" >Home</a>
+                </td>
+                <td class="style2" width="16.6%">
+                   <a href="Register.aspx" style="text-decoration: none; color: #000000" >Register</a>
+                </td>
+                <td class="style2" width="16.6%">
+                   <a href="Search.aspx" style="text-decoration: none; color: #000000" >Search</a>
+                </td>
+                <td class="style2" width="16.6%">
+                   <a href="Display.aspx" style="text-decoration: none; color: #000000" >Display</a>                    
+                </td>
+                <td class="style2" width="16.6%">
+                   <a href="edit.aspx" style="text-decoration: none; color: #000000" >Edit</a>                                        
+                </td>
+                <td class="style2" width="16.6%">
+                   <a href="Logout.aspx" style="text-decoration: none; color: #000000" >Logout</a>                                        
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

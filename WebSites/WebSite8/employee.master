@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="employee.master.cs" Inherits="employee" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+        .style3
+        {
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <center>
+    <h2>Employee Management System</h2>
+        <hr />
+    <table class="style1">
+        <tr>
+            <td class="style2" width="20%">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/newEmployee.aspx">New Employee</asp:HyperLink>
+            </td>
+            <td class="style2" width="20%">
+                <asp:HyperLink ID="HyperLink2" runat="server" 
+                    NavigateUrl="~/searchEmployee.aspx">Search</asp:HyperLink>
+            </td>
+            <td class="style2" width="20%">
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/all.aspx">All</asp:HyperLink>
+            </td>
+            <td class="style2" width="20%">
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/edit.aspx">Edit</asp:HyperLink>
+            </td>
+            <td class="style2" width="20%">
+                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Logout.aspx">Logout</asp:HyperLink>
+            </td>
+        </tr>
+    </table>
+    <hr />
+&nbsp;<div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

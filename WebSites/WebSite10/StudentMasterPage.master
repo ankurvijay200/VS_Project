@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="StudentMasterPage.master.cs" Inherits="StudentMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            height: 49px;
+        }
+        .style3
+        {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table bgcolor="Aqua" class="style1">
+        <tr>
+            <td class="style2" colspan="4" 
+                style="color: #FFFFFF; text-align: center; font-family: Algerian; font-size: xx-large; background-color: #CC0000">
+                LIbrary management system</td>
+        </tr>
+        <tr>
+            <td style="text-align: center" width="25%">
+                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="style3" 
+                    ForeColor="Black" NavigateUrl="~/SearchBook.aspx">Search Book</asp:HyperLink>
+            </td>
+            <td style="text-align: center" width="25%">
+                <asp:HyperLink ID="HyperLink2" runat="server" CssClass="style3" 
+                    ForeColor="Black" NavigateUrl="~/ListOfAllBooks.aspx">All Books</asp:HyperLink>
+            </td>
+            <td style="text-align: center" width="25%">
+                <asp:HyperLink ID="HyperLink3" runat="server" CssClass="style3" 
+                    ForeColor="Black" NavigateUrl="~/myProfile .aspx">My Profile</asp:HyperLink>
+            </td>
+            <td style="text-align: center" width="25%">
+                <asp:HyperLink ID="HyperLink4" runat="server" CssClass="style3" 
+                    ForeColor="Black" NavigateUrl="~/libraryLogout.aspx">Log Out</asp:HyperLink>
+            </td>
+        </tr>
+    </table>
+&nbsp;<div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

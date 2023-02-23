@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminMasterPage.master.cs" Inherits="adminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            height: 28px;
+            text-align: center;
+        }
+        .style3
+        {
+            height: 28px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="style1" bgcolor="Aqua" border="1">
+        <tr>
+            <td colspan="8" 
+                style="font-family: Algerian; font-size: xx-large; color: #FFFFFF; background-color: #CC0000;">
+                <table cellpadding="0" cellspacing="0" class="style1">
+                    <tr>
+                        <td width="80%">
+                Myschool.com</td>
+                        <td style="text-align: center">
+                            <asp:Label ID="Label1" runat="server" 
+                                style="font-family: Arial; font-size: medium"></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="style3" width="12%">
+                <asp:Button ID="Button1" runat="server" BackColor="Aqua" BorderWidth="0px" 
+                    onclick="Button1_Click" Text="Home" Width="90%" />
+            </td>
+            <td class="style2" width="12%">
+                <asp:Button ID="Button2" runat="server" BackColor="Aqua" BorderWidth="0px" 
+                    Text="New Staff" Width="90%" onclick="Button2_Click" />
+            </td>
+            <td class="style2" width="12%">
+                <asp:Button ID="Button3" runat="server" BackColor="Aqua" BorderWidth="0px" 
+                    Text="Search" Width="90%" />
+            </td>
+            <td class="style2" width="12%">
+                <asp:Button ID="Button4" runat="server" BackColor="Aqua" BorderWidth="0px" 
+                    Text="Display" Width="90%" onclick="Button4_Click" />
+            </td>
+            <td class="style2" width="12%">
+                <asp:Button ID="Button5" runat="server" BackColor="Aqua" BorderWidth="0px" 
+                    Text="Fees" Width="90%" onclick="Button5_Click" />
+            </td>
+            <td class="style2" width="12%">
+                <asp:Button ID="Button6" runat="server" BackColor="Aqua" BorderWidth="0px" 
+                    Text="Exam" Width="90%" onclick="Button6_Click" />
+            </td>
+            <td class="style2" width="12%">
+                <asp:Button ID="Button7" runat="server" BackColor="Aqua" BorderWidth="0px" 
+                    Text="Accounts" Width="90%" onclick="Button7_Click" />
+            </td>
+            <td class="style2" width="12%">
+                <asp:Button ID="Button8" runat="server" BackColor="Aqua" BorderWidth="0px" 
+                    onclick="Button8_Click" Text="Logout" Width="90%" />
+            </td>
+        </tr>
+    </table>
+&nbsp;<div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
