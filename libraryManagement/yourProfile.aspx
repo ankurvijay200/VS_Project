@@ -62,8 +62,7 @@
     <tr>
         <td class="style6" colspan="2">
             <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
-                style="background-color: #FFFF00" Text="Update" 
-                PostBackUrl="~/updateYourProfileAdmin.aspx" />
+                style="background-color: #FFFF00" Text="Update" />
         </td>
     </tr>
 </table>
