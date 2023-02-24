@@ -14,6 +14,10 @@
         {
             text-align: center;
         }
+        .style3
+        {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body style="background-color: #00FFFF">
@@ -91,9 +95,9 @@
                     </tr>
                     <tr>
                         <td class="style2" width="50%">
-                            Total</td>
+                            <strong>Total</strong></td>
                         <td class="style2" width="25%">
-                            <asp:Label ID="Label1" runat="server"></asp:Label>
+                            <asp:Label ID="Label1" runat="server" CssClass="style3"></asp:Label>
                         </td>
                         <td class="style2" width="25%">
                             <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Go" 
@@ -104,12 +108,12 @@
                     </tr>
                     <tr>
                         <td class="style2" width="50%">
-                            Percentage</td>
+                            <strong>Percentage</strong></td>
                         <td class="style2" width="25%">
-                            <asp:Label ID="Label2" runat="server"></asp:Label>
+                            <asp:Label ID="Label2" runat="server" CssClass="style3"></asp:Label>
                         </td>
                         <td class="style2" width="25%">
-                            <asp:Label ID="Label3" runat="server"></asp:Label>
+                            <asp:Label ID="Label3" runat="server" CssClass="style3"></asp:Label>
                         </td>
                     </tr>
                 </table>
