@@ -30,6 +30,5 @@ public partial class marksheet : System.Web.UI.Page
         TextBox1.Text = TextBox2.Text = TextBox3.Text = TextBox4.Text = TextBox5.Text = TextBox6.Text = TextBox7.Text = null;
         Label1.Text = Label2.Text = Label3.Text = null;
         Button2.Visible = false;
-
     }
 }
