@@ -38,13 +38,6 @@ This repository is a starting point to learn about and engage in .NET and .NET o
 What did you learn while building this project?
 - Topics here
 
-## Related
-
-Here are some related projects
-
-[Awesome README](https://github.com/matiassingers/awesome-readme)
-
-
 ## Support
 
 For support, email ankurvijay200@gmail.com 
