@@ -13,7 +13,6 @@ public partial class typeOfTriangle : System.Web.UI.Page
     protected void Button1_Click(object sender, EventArgs e)
     {
         int a = Convert.ToInt32(TextBox1.Text), b = Convert.ToInt32(TextBox2.Text), c = Convert.ToInt32(TextBox3.Text);
-
         if (a == b && b == c)
             Label1.Text = "Equilateral triangle";
         else if (a == b || a == c || b == c)
