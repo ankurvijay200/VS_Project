@@ -33,31 +33,67 @@
             </tr>
             <tr>
                 <td class="style2" width="33%">
-                    <asp:TextBox ID="TextBox1" runat="server" ToolTip="Item Name" Width="80%"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" ToolTip="Item Name" 
+                        ValidationGroup="a" Width="80%"></asp:TextBox>
                 </td>
                 <td class="style2" width="33%">
-                    <asp:TextBox ID="TextBox2" runat="server" ToolTip="Price" Width="40%"></asp:TextBox>
-                    <asp:TextBox ID="TextBox3" runat="server" ToolTip="Quantity" Width="40%"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" ToolTip="Price" ValidationGroup="a" 
+                        Width="40%"></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" ToolTip="Quantity" 
+                        ValidationGroup="a" Width="40%"></asp:TextBox>
                 </td>
                 <td class="style2" colspan="2" width="33%">
-                    <asp:Button ID="Button1" runat="server" Text="Add Item" Width="80%" />
+                    <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Add Item" 
+                        ValidationGroup="a" Width="80%" />
                 </td>
             </tr>
             <tr>
+                <td class="style2" width="33%">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                        ControlToValidate="TextBox1" ErrorMessage="Enter value" ValidationGroup="a"></asp:RequiredFieldValidator>
+                </td>
+                <td class="style2" width="33%">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                        ControlToValidate="TextBox2" ErrorMessage="Enter value" ValidationGroup="a"></asp:RequiredFieldValidator>
+&nbsp;&nbsp;&nbsp;
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
+                        ControlToValidate="TextBox3" ErrorMessage="Enter value" ValidationGroup="a"></asp:RequiredFieldValidator>
+                </td>
+                <td class="style2" colspan="2" width="33%">
+                    &nbsp;</td>
+            </tr>
+            <tr>
                 <td class="style3" width="33%">
-                    <asp:ListBox ID="ListBox1" runat="server" Width="80%"></asp:ListBox>
+                    <asp:ListBox ID="ListBox1" runat="server" AutoPostBack="True" 
+                        onselectedindexchanged="ListBox1_SelectedIndexChanged" Rows="10" Width="80%">
+                        <asp:ListItem>Coffee</asp:ListItem>
+                        <asp:ListItem>Tea</asp:ListItem>
+                    </asp:ListBox>
                 </td>
                 <td class="style3" width="33%">
-                    <asp:ListBox ID="ListBox2" runat="server" Width="40%"></asp:ListBox>
-                    <asp:ListBox ID="ListBox3" runat="server" Width="40%"></asp:ListBox>
+                    <asp:ListBox ID="ListBox2" runat="server" Rows="10" Width="40%">
+                        <asp:ListItem>30</asp:ListItem>
+                        <asp:ListItem>15</asp:ListItem>
+                    </asp:ListBox>
+                    <asp:ListBox ID="ListBox3" runat="server" Rows="10" Width="40%">
+                        <asp:ListItem>5</asp:ListItem>
+                        <asp:ListItem>4</asp:ListItem>
+                    </asp:ListBox>
                 </td>
                 <td class="style3" colspan="2" width="33%">
-                    <asp:ListBox ID="ListBox4" runat="server" Width="80%"></asp:ListBox>
+                    <asp:ListBox ID="ListBox4" runat="server" Rows="10" Width="80%">
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                        <asp:ListItem>3</asp:ListItem>
+                        <asp:ListItem>4</asp:ListItem>
+                        <asp:ListItem>5</asp:ListItem>
+                    </asp:ListBox>
                 </td>
             </tr>
             <tr>
                 <td class="style3" colspan="4">
-                    <asp:Button ID="Button2" runat="server" Text="Add To Cart" Width="93.7%" />
+                    <asp:Button ID="Button2" runat="server" onclick="Button2_Click" 
+                        Text="Add To Cart" Width="93.7%" />
                 </td>
             </tr>
             <tr>
@@ -71,14 +107,14 @@
             </tr>
             <tr>
                 <td class="style3">
-                    <asp:ListBox ID="ListBox5" runat="server" Width="80%"></asp:ListBox>
+                    <asp:ListBox ID="ListBox5" runat="server" Rows="8" Width="80%"></asp:ListBox>
                 </td>
                 <td class="style3">
-                    <asp:ListBox ID="ListBox6" runat="server" Width="80%"></asp:ListBox>
+                    <asp:ListBox ID="ListBox6" runat="server" Rows="8" Width="80%"></asp:ListBox>
                 </td>
                 <td class="style3" colspan="2">
-                    <asp:ListBox ID="ListBox7" runat="server" Width="40%"></asp:ListBox>
-                    <asp:ListBox ID="ListBox8" runat="server" Width="40%"></asp:ListBox>
+                    <asp:ListBox ID="ListBox7" runat="server" Rows="8" Width="40%"></asp:ListBox>
+                    <asp:ListBox ID="ListBox8" runat="server" Rows="8" Width="40%"></asp:ListBox>
                 </td>
             </tr>
             <tr>
