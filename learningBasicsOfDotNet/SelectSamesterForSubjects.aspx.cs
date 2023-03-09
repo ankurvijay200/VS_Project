@@ -68,6 +68,6 @@ public partial class SelectSamesterForSubjects : System.Web.UI.Page
             ListBox1.Items.Add("Sam8 Sub1");
             ListBox1.Items.Add("Sam8 Sub2");
             ListBox1.Items.Add("Sam8 Sub3");
-        }
+        }
     }
 }
