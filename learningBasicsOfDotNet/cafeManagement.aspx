@@ -65,28 +65,36 @@
             <tr>
                 <td class="style3" width="33%">
                     <asp:ListBox ID="ListBox1" runat="server" AutoPostBack="True" 
-                        onselectedindexchanged="ListBox1_SelectedIndexChanged" Rows="10" Width="80%">
+                        onselectedindexchanged="ListBox1_SelectedIndexChanged" Rows="10" 
+                        Width="80%" ToolTip="Item Name">
                         <asp:ListItem>Coffee</asp:ListItem>
                         <asp:ListItem>Tea</asp:ListItem>
                     </asp:ListBox>
                 </td>
                 <td class="style3" width="33%">
-                    <asp:ListBox ID="ListBox2" runat="server" Rows="10" Width="40%">
+                    <asp:ListBox ID="ListBox2" runat="server" Rows="10" Width="40%" ToolTip="Price">
                         <asp:ListItem>30</asp:ListItem>
                         <asp:ListItem>15</asp:ListItem>
                     </asp:ListBox>
-                    <asp:ListBox ID="ListBox3" runat="server" Rows="10" Width="40%">
+                    <asp:ListBox ID="ListBox3" runat="server" Rows="10" Width="40%" 
+                        ToolTip="Available Quantity">
                         <asp:ListItem>5</asp:ListItem>
                         <asp:ListItem>4</asp:ListItem>
                     </asp:ListBox>
                 </td>
                 <td class="style3" colspan="2" width="33%">
-                    <asp:ListBox ID="ListBox4" runat="server" Rows="10" Width="80%">
+                    <asp:ListBox ID="ListBox4" runat="server" Rows="10" Width="80%" 
+                        ToolTip="Required Quantity">
                         <asp:ListItem>1</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
                         <asp:ListItem>3</asp:ListItem>
                         <asp:ListItem>4</asp:ListItem>
                         <asp:ListItem>5</asp:ListItem>
+                        <asp:ListItem>6</asp:ListItem>
+                        <asp:ListItem>7</asp:ListItem>
+                        <asp:ListItem>8</asp:ListItem>
+                        <asp:ListItem>9</asp:ListItem>
+                        <asp:ListItem>10</asp:ListItem>
                     </asp:ListBox>
                 </td>
             </tr>
@@ -107,26 +115,30 @@
             </tr>
             <tr>
                 <td class="style3">
-                    <asp:ListBox ID="ListBox5" runat="server" Rows="8" Width="80%"></asp:ListBox>
+                    <asp:ListBox ID="ListBox5" runat="server" Rows="8" Width="80%" 
+                        ToolTip="Item Name"></asp:ListBox>
                 </td>
                 <td class="style3">
-                    <asp:ListBox ID="ListBox6" runat="server" Rows="8" Width="80%"></asp:ListBox>
+                    <asp:ListBox ID="ListBox6" runat="server" Rows="8" Width="80%" 
+                        ToolTip="Quantity"></asp:ListBox>
                 </td>
                 <td class="style3" colspan="2">
-                    <asp:ListBox ID="ListBox7" runat="server" Rows="8" Width="40%"></asp:ListBox>
-                    <asp:ListBox ID="ListBox8" runat="server" Rows="8" Width="40%"></asp:ListBox>
+                    <asp:ListBox ID="ListBox7" runat="server" Rows="8" Width="40%" ToolTip="Amount"></asp:ListBox>
+                    <asp:ListBox ID="ListBox8" runat="server" Rows="8" Width="40%" ToolTip="Profit"></asp:ListBox>
                 </td>
             </tr>
             <tr>
                 <td class="style3">
-                    &nbsp;</td>
+                    <asp:Button ID="Button3" runat="server" onclick="Button3_Click" Text="CheckOut" 
+                        Width="80%" />
+                </td>
                 <td class="style3">
                     Total Items : 
                     <asp:Label ID="Label2" runat="server"></asp:Label>
                 </td>
                 <td class="style3">
                     Total Amount :
-                    <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label3" runat="server"></asp:Label>
                 </td>
                 <td class="style3">
                     Total Profit :
