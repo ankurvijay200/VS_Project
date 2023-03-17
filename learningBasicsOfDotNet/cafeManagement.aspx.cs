@@ -87,6 +87,6 @@ public partial class cafeManagement : System.Web.UI.Page
         ListBox6.Items.Clear();
         ListBox7.Items.Clear();
         ListBox8.Items.Clear();
-        Label1.Text = Label2.Text = Label3.Text = Label4.Text = null;
+        Label2.Text = Label3.Text = Label4.Text = null;
     }
 }
