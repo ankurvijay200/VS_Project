@@ -9,7 +9,6 @@ public partial class loadingPageWithoutUpdateProgress_lodingPage : System.Web.UI
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
     }
     protected void Timer1_Tick(object sender, EventArgs e)
     {
