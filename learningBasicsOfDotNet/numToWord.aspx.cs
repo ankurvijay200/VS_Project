@@ -5,17 +5,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class numberOfDigits : System.Web.UI.Page
+public partial class numToWord : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
 
     }
-
-    protected void TextBox1_TextChanged1(object sender, EventArgs e)
+    protected void Button1_Click(object sender, EventArgs e)
     {
         string[] name = {
-          "",
           "One",
           "Two",
           "Three",
@@ -136,7 +134,7 @@ public partial class numberOfDigits : System.Web.UI.Page
                 a += m[i];
                 myint = Convert.ToInt32(a);
 
-                Label1.Text = Convert.ToString(name[myint] + " Lakh ");
+                Label1.Text = Convert.ToString(name[myint - 1] + " Lakh ");
             }
             else if (count == 4)
             {
@@ -146,7 +144,7 @@ public partial class numberOfDigits : System.Web.UI.Page
                 if (myint != 0)
                 {
 
-                    Label2.Text = Convert.ToString(name[myint] + " Thousand ");
+                    Label2.Text = Convert.ToString(name[myint - 1] + " Thousand ");
                 }
                 i++;
             }
@@ -157,30 +155,28 @@ public partial class numberOfDigits : System.Web.UI.Page
                 if (myint != 0)
                 {
 
-                    Label2.Text = Convert.ToString(name[myint] + " Thousand ");
+                    Label3.Text = Convert.ToString(name[myint - 1] + " Thousand ");
                 }
             }
             else if (count == 2)
             {
-
+                
                 a += m[i];
                 myint = Convert.ToInt32(a);
                 if (myint != 0)
                 {
                     var t = name[myint - 1] + " Hundred ";
-                    Label3.Text = Convert.ToString(name[myint] + " Hundred ");
+                    Label4.Text = Convert.ToString(name[myint - 1] + " Hundred ");
                 }
             }
             else
-            {
-
+            {     
                 a += m[i];
                 a += m[i + 1];
                 myint = Convert.ToInt32(a);
-                Label4.Text = Convert.ToString(name[myint]);
+                Label5.Text = Convert.ToString(name[myint - 1]);
                 break;
             }
         }
     }
 }
-    
