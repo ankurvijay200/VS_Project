@@ -27,7 +27,7 @@
                 </asp:TemplateField>
                 <asp:TemplateField>
                     <ItemTemplate>
-                        <asp:LinkButton ID="btn" runat="server" OnCommand="abc" CommandName='<%#Eval("Name")%>' Text="View"></asp:LinkButton>
+                        <asp:LinkButton ID="btn" runat="server" OnCommand="abc"  Text="View"></asp:LinkButton>
                     </ItemTemplate> 
                 </asp:TemplateField>               
             </Columns>
