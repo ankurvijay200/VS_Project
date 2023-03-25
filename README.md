@@ -34,9 +34,48 @@ This repository is a starting point to learn about and engage in .NET and .NET o
 - Microsoft Visual Studio Community Edition 2010.
 - SQL
     
-## Roadmap
-What did you learn while building this project?
-- Topics here
+
+# ROADMAP
+### Basics :- Folder Name : learningBasicsOfDotNet
+- Learning About Tools :
+    - Standard
+        - Buttons
+        - Calendar
+        - CheckBox
+        - CheckBoxList
+        - DropDownList
+        - FileUpload
+        - HyperLink
+        - Image
+        - ImageButton
+        - ListBox
+        - LinkButton
+        - MultiView
+        - PlaceHolder
+        - RadioButton
+        - RadioButtonList
+        - Table
+        - TextBox
+        - View
+        - Wizard
+    - Data
+        - GridView
+        - ListView
+        - Sessions
+        - Cache
+        - QueryString
+    - Validation
+        - CompareValidator
+        - CustomValidator
+        - RangeValidator
+        - RegularExpressionValidator
+        - RequiredFieldValidator
+        - ValidationSummary
+    - AJAX Extensions
+        - ScriptManager
+        - Timer
+        - UpdatePanel
+        - UpdateProgress
 
 ## Support
 
