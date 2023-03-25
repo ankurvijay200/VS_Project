@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
 
-public partial class gridviewCustomdatabase : System.Web.UI.Page
+public partial class gridviewCustomDatabase2 : System.Web.UI.Page
 {
     SqlConnection con;
     SqlDataAdapter da;
@@ -16,17 +16,14 @@ public partial class gridviewCustomdatabase : System.Web.UI.Page
         con = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=newTestDatabase;Integrated Security=True");
         con.Open();
 
-        string query = "select * from employee";
+        var name = Request.QueryString["name"].ToString();
+        string query = "select * from employee where Name='" + name + "'";
         DataSet ds = new DataSet();
-        da = new SqlDataAdapter(query,con);
+        da = new SqlDataAdapter(query, con);
         da.Fill(ds);
-        GridView1.DataSource = ds;
-        GridView1.DataBind();
-    }
-    public void abc(object sender, CommandEventArgs e)
-    {
-        Response.Write("<Script>alert('testing')</script>");
-        string name = e.CommandName.ToString();
-        Response.Redirect("gridviewCustomDatabase2.aspx?name=" + name);
+
+        Label1.Text = ds.Tables[0].Rows[0][0].ToString();
+        Label2.Text = ds.Tables[0].Rows[0][1].ToString();
+        Label3.Text = ds.Tables[0].Rows[0][2].ToString();
     }
 }
