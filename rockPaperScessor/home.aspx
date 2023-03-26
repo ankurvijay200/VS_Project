@@ -20,11 +20,15 @@
                 <strong>You :
                 <asp:Label ID="Label1" runat="server"></asp:Label>
                 </strong>
+                <asp:ListBox ID="ListBox1" runat="server" Rows="1" Visible="False">
+                </asp:ListBox>
             </td>
             <td class="style2" width="50%">
                 <strong>Computer :
                 <asp:Label ID="Label2" runat="server"></asp:Label>
                 </strong>
+                <asp:ListBox ID="ListBox2" runat="server" Rows="1" Visible="False">
+                </asp:ListBox>
             </td>
         </tr>
         <tr>
@@ -51,16 +55,17 @@
         </tr>
         <tr>
             <td colspan="2" style="text-align: center">
-                <asp:Label ID="Label3" runat="server"></asp:Label>
+                <asp:Label ID="Label3" runat="server" 
+                    style="font-size: x-large; color: #CC0000; font-weight: 700; font-style: italic; font-family: 'Ink Free'"></asp:Label>
             </td>
         </tr>
         <tr>
             <td colspan="2" style="text-align: center">
                 <asp:Button ID="Button1" runat="server" BackColor="#00CC00" 
-                    style="color: #FFFFFF" Text="Play Again" Width="60%" />
+                    style="color: #FFFFFF" Text="Play Again" Width="60%" 
+                    onclick="Button1_Click" />
             </td>
         </tr>
     </table>
-&nbsp;
 </asp:Content>
 
