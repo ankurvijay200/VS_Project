@@ -10,7 +10,10 @@
     </tr>
     <tr>
         <td style="text-align: center">
-            &nbsp;</td>
+            <asp:GridView ID="GridView1" runat="server" Width="100%">
+                <HeaderStyle BackColor="#CC0000" ForeColor="White" />
+            </asp:GridView>
+        </td>
     </tr>
 </table>
 </asp:Content>
