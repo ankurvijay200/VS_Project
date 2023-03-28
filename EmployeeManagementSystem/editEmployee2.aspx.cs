@@ -7,22 +7,18 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
 
-public partial class allEmployee : System.Web.UI.Page
+public partial class editEmployee2 : System.Web.UI.Page
 {
     SqlConnection con;
     SqlDataAdapter da;
-
+    SqlCommand cd;
     protected void Page_Load(object sender, EventArgs e)
     {
+        var eid = Request.QueryString["eId"].ToString();
         con = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=newTestDatabase;Integrated Security=True");
         con.Open();
-
-        string query = "select * from employeeManagement";
-        DataSet ds = new DataSet();
-        da = new SqlDataAdapter(query,con);
-        da.Fill(ds);
-
-        GridView1.DataSource = ds;
-        GridView1.DataBind();
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
     }
 }

@@ -28,7 +28,7 @@
             </td>
             <td class="style4" width="33%">
                 <asp:Button ID="Button1" runat="server" BackColor="#0099FF" 
-                    style="color: #FFFFFF" Text="Search" Width="80%" />
+                    style="color: #FFFFFF" Text="Search" Width="80%" onclick="Button1_Click" />
             </td>
         </tr>
         <tr>
@@ -60,11 +60,18 @@
             </td>
         </tr>
         <tr>
+            <td class="style5" colspan="2" width="50%">
+                Employee User Role</td>
+            <td class="style5" colspan="2" style="margin-left: 40px" width="50%">
+                <asp:Label ID="Label6" runat="server"></asp:Label>
+            </td>
+        </tr>
+        <tr>
             <td class="style5" colspan="4">
                 <asp:Button ID="Button2" runat="server" BackColor="Yellow" Text="Update" 
-                    Width="30%" />
+                    Width="30%" onclick="Button2_Click" />
                 <asp:Button ID="Button3" runat="server" BackColor="#CC0000" 
-                    style="color: #FFFFFF" Text="Delete" Width="30%" />
+                    style="color: #FFFFFF" Text="Delete" Width="30%" onclick="Button3_Click" />
             </td>
         </tr>
     </table>
