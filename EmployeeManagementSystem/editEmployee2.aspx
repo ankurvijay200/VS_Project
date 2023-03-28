@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table class="style1">
+    <table border="1" cellpadding="3" cellspacing="1" class="style1">
         <tr>
             <td colspan="2" 
                 style="text-align: center; font-size: large; font-style: italic">
@@ -50,8 +50,8 @@
         </tr>
         <tr>
             <td colspan="2" style="text-align: center">
-                <asp:Button ID="Button1" runat="server" BackColor="Yellow" Text="Update" 
-                    Width="60%" />
+                <asp:Button ID="Button1" runat="server" BackColor="Yellow" 
+                    onclick="Button1_Click" Text="Update" Width="60%" />
             </td>
         </tr>
     </table>
