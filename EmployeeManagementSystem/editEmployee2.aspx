@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table border="1" cellpadding="3" cellspacing="1" class="style1">
         <tr>
-            <td colspan="2" 
+            <td 
                 style="text-align: center; font-size: large; font-style: italic">
                 Update Employee Detail</td>
         </tr>
@@ -49,7 +49,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2" style="text-align: center">
+            <td style="text-align: center">
                 <asp:Button ID="Button1" runat="server" BackColor="Yellow" 
                     onclick="Button1_Click" Text="Update" Width="60%" />
             </td>
