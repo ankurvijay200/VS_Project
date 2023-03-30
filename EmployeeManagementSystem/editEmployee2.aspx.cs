@@ -42,7 +42,6 @@ public partial class editEmployee2 : System.Web.UI.Page
         else
              roleUser = 1;
 
-
         string updateQuery = "update employeeManagement set eName='" + TextBox1.Text + "', eDept='" + TextBox2.Text + "', eSal = " + Convert.ToInt32(TextBox3.Text) + ", eCity = '" + TextBox4.Text + "', eRole = " + Convert.ToInt32(roleUser) + "where eId = " + Convert.ToInt32(eId);
         cd = new SqlCommand(updateQuery, con);
         cd.ExecuteNonQuery();
