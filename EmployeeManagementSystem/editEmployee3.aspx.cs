@@ -31,6 +31,5 @@ public partial class editEmployee3 : System.Web.UI.Page
         cd = new SqlCommand(updateQuery, con);
         cd.ExecuteNonQuery();
         Response.Write("<script>alert('Updated Successfully..')</script>");
-
     }
 }
