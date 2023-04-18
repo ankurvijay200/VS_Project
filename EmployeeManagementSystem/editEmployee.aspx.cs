@@ -35,7 +35,7 @@ public partial class editEmployee : System.Web.UI.Page
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
-        Response.Redirect("editEmployee3.aspx?eId=" + TextBox1.Text + "&eName=" + Label2.Text + "&eDept=" + Label3.Text + "&eSal=" + Label4.Text + "&eCity=" + Label5.Text + "&userRole=" + Label6.Text);
+        Response.Redirect("editEmployee4.aspx?eId=" + TextBox1.Text +"");
     }
     protected void Button3_Click(object sender, EventArgs e)
     {

@@ -15,7 +15,7 @@ public partial class editEmployee3 : System.Web.UI.Page
         con = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=newTestDatabase;Integrated Security=True");
         con.Open();
         TextBox1.Text = Request.QueryString["eId"].ToString();
-        TextBox2.Text = Request.QueryString["eName"].ToString();
+        /*TextBox2.Text = Request.QueryString["eName"].ToString();
         TextBox3.Text = Request.QueryString["eDept"].ToString();
         TextBox4.Text = Request.QueryString["eSal"].ToString();
         TextBox5.Text = Request.QueryString["eCity"].ToString();
@@ -24,6 +24,7 @@ public partial class editEmployee3 : System.Web.UI.Page
             RadioButtonList1.SelectedIndex = 0;
         else
             RadioButtonList1.SelectedIndex = 1;
+         * */
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
