@@ -16,6 +16,7 @@ public partial class SearchEmployee : System.Web.UI.Page
     {
         con = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=newTestDatabase;Integrated Security=True");
         con.Open();
+        Button2.Visible = Button3.Visible = false;
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
@@ -32,5 +33,19 @@ public partial class SearchEmployee : System.Web.UI.Page
             Label6.Text = "Employee";
         else
             Label6.Text = "Admin";
+        Label7.Text = ds.Tables[0].Rows[0][6].ToString();
+        Label7.Visible = false;
+        Button2.Visible = true;
+        Button3.Visible = false;
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        Label7.Visible = Button3.Visible = true;
+        Button2.Visible = false;
+    }
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        Label7.Visible = Button3.Visible = false;
+        Button2.Visible = true;
     }
 }

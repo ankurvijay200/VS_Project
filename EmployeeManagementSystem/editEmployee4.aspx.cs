@@ -33,6 +33,7 @@ public partial class editEmployee4 : System.Web.UI.Page
         TextBox2.Text = ds.Tables[0].Rows[0][2].ToString();
         TextBox3.Text = ds.Tables[0].Rows[0][3].ToString();
         TextBox4.Text = ds.Tables[0].Rows[0][4].ToString();
+        TextBox5.Text = ds.Tables[0].Rows[0][6].ToString();
 
         Button1.Visible = false;
         Button2.Visible = true;
@@ -40,7 +41,7 @@ public partial class editEmployee4 : System.Web.UI.Page
     protected void Button2_Click(object sender, EventArgs e)
     {
         var eId = Request.QueryString["eId"].ToString();
-        string updateQuery = "update employeeManagement set eName='" + TextBox1.Text + "', eDept='" + TextBox2.Text + "', eSal = " + Convert.ToInt32(TextBox3.Text) + ", eCity = '" + TextBox4.Text + "'where eId = " + Convert.ToInt32(eId);
+        string updateQuery = "update employeeManagement set eName='" + TextBox1.Text + "', eDept='" + TextBox2.Text + "', eSal = " + Convert.ToInt32(TextBox3.Text) + ", eCity = '" + TextBox4.Text + "',ePass='"+ TextBox5.Text + "'where eId = " + Convert.ToInt32(eId);
         cd = new SqlCommand(updateQuery, con);
         cd.ExecuteNonQuery();
         Response.Write("<script>alert('Updated Successfully..')</script>");

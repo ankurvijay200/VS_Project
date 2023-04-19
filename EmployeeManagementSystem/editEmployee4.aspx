@@ -40,6 +40,13 @@
             </td>
         </tr>
         <tr>
+            <td class="style2" width="50%">
+                Password</td>
+            <td class="style2" style="margin-left: 40px" width="50%">
+                <asp:TextBox ID="TextBox5" runat="server" Width="70%"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
             <td class="style2" colspan="2">
                 <asp:Button ID="Button2" runat="server" onclick="Button2_Click" 
                     style="color: #FFFFFF; background-color: #0066FF" Text="Update" Width="50%" />

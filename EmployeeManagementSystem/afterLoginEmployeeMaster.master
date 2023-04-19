@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="afterLoginEmployeeMaster.master.cs" Inherits="afterLoginEmployeeMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+        .style3
+        {
+            background-color: #CC0000;
+        }
+        .style4
+        {
+            color: #FFFFFF;
+        }
+        .style5
+        {
+            color: #FFFFFF;
+            background-color: #CC0000;
+        }
+        .style6
+        {
+            text-decoration: none;
+            color: #000000;
+        }
+    </style>
+</head>
+<body style="background-color: #00FFFF">
+    <form id="form1" runat="server">
+    <div>
+    <table class="style1" border="1" cellpadding="1" cellspacing="1">
+            <tr>
+                <td class="style5" style="font-family: 'Arial Black'; font-size: xx-large" 
+                    width="80%">
+                                Employee Management System</td>
+                <td class="style3" style="text-align: center; font-size: large">
+                    <asp:Label ID="Label1" runat="server" CssClass="style4" Text="Label"></asp:Label>
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table border="1" cellpadding="1" cellspacing="1" class="style1">
+                        <tr>
+                            <td class="style2" width="33%">
+                                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="style6" 
+                                    NavigateUrl="~/yourProfileEmployee.aspx">Your Profile</asp:HyperLink>
+                            </td>
+                            <td class="style2" width="33%">
+                                <asp:HyperLink ID="HyperLink2" runat="server" CssClass="style6" 
+                                    NavigateUrl="~/help.aspx">Help</asp:HyperLink>
+                            </td>
+                            <td class="style2" width="33%">
+                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Logout.aspx" 
+                                    CssClass="style6">Logout</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

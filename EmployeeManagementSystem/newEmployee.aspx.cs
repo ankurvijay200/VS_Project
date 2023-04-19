@@ -31,11 +31,11 @@ public partial class newEmployee : System.Web.UI.Page
             if (RadioButtonList1.SelectedIndex == 1)
                 role = 1;
 
-            string query = "insert into employeeManagement values(" + TextBox1.Text + ",'" + TextBox2.Text + "','" + TextBox3.Text + "'," + TextBox4.Text + ",'" + TextBox5.Text + "'," + role + ")";
+            string query = "insert into employeeManagement values(" + TextBox1.Text + ",'" + TextBox2.Text + "','" + TextBox3.Text + "'," + TextBox4.Text + ",'" + TextBox5.Text + "'," + role + ",'"+TextBox6.Text+"')";
             cd = new SqlCommand(query, con);
             cd.ExecuteNonQuery();
 
-            TextBox1.Text = TextBox2.Text = TextBox3.Text = TextBox4.Text = TextBox5.Text = null;
+            TextBox1.Text = TextBox2.Text = TextBox3.Text = TextBox4.Text = TextBox5.Text = TextBox6.Text = null;
             RadioButtonList1.SelectedIndex = -1;
 
             Response.Write("<script>alert('User Registered Successfully!')</script>");

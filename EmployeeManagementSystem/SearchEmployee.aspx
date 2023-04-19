@@ -64,6 +64,17 @@
                 <asp:Label ID="Label6" runat="server"></asp:Label>
             </td>
         </tr>
+        <tr>
+            <td colspan="2" style="text-align: center" width="50%">
+                Employee Password</td>
+            <td colspan="2" style="text-align: center" width="50%">
+                <asp:Label ID="Label7" runat="server"></asp:Label>
+                <asp:Button ID="Button2" runat="server" onclick="Button2_Click" 
+                    style="background-color: #FFFF00" Text="Show" Width="10%" />
+                <asp:Button ID="Button3" runat="server" onclick="Button3_Click" 
+                    style="color: #FFFFFF; background-color: #0066FF" Text="Hide" Width="10%" />
+            </td>
+        </tr>
         </table>
 </asp:Content>
 
