@@ -19,7 +19,8 @@ public partial class help : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        string query = "insert into employeeManagementHelp values("+TextBox1.Text+",'"+TextBox2.Text+"',"+ 0 +")";
+        int n = new Random().Next(1, 400000);
+        string query = "insert into employeeManagementHelp values("+TextBox1.Text+",'"+TextBox2.Text+"',"+ 0 +",'"+DateTime.Now.ToLongDateString()+"'," + n+")";
         cd = new SqlCommand(query, con);
         cd.ExecuteNonQuery();
         TextBox2.Text = null;

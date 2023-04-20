@@ -28,7 +28,7 @@
     <div>
         <table border="1" cellpadding="1" cellspacing="1" class="style1">
             <tr>
-                <td colspan="6" style="background-color: #CC0000">
+                <td colspan="7" style="background-color: #CC0000">
                     <table class="style1">
                         <tr>
                             <td style="font-family: 'Arial Black'; font-size: xx-large; color: #FFFFFF" 
@@ -42,27 +42,31 @@
                 </td>
             </tr>
             <tr>
-                <td class="style2" width="16.5%">
+                <td class="style2" width="14.2%">
                     <asp:HyperLink ID="HyperLink1" runat="server" CssClass="style3" 
                         NavigateUrl="~/newEmployee.aspx">New Employee</asp:HyperLink>
                 </td>
-                <td class="style2" width="16.5%">
+                <td class="style2" width="14.2%">
                     <asp:HyperLink ID="HyperLink2" runat="server" CssClass="style3" 
                         NavigateUrl="~/SearchEmployee.aspx">Search Employee</asp:HyperLink>
                 </td>
-                <td class="style2" width="16.5%">
+                <td class="style2" width="14.2%">
                     <asp:HyperLink ID="HyperLink3" runat="server" CssClass="style3" 
                         NavigateUrl="~/editEmployee.aspx">Edit Employee</asp:HyperLink>
                 </td>
-                <td class="style2" width="16.5%">
+                <td class="style2" width="14.2%">
                     <asp:HyperLink ID="HyperLink4" runat="server" CssClass="style3" 
                         NavigateUrl="~/allEmployee.aspx">All Employee</asp:HyperLink>
                 </td>
-                <td class="style2" width="16.5%">
+                <td class="style2" width="14.2%">
                     <asp:HyperLink ID="HyperLink5" runat="server" CssClass="style3" 
                         NavigateUrl="~/yourProfile.aspx">Your Profile</asp:HyperLink>
                 </td>
-                <td class="style2" width="16.5%">
+                <td class="style2" width="14.2%">
+                    <asp:HyperLink ID="HyperLink7" runat="server" CssClass="style3" 
+                        NavigateUrl="~/inbox.aspx">Inbox</asp:HyperLink>
+                </td>
+                <td class="style2" width="14.2%">
                     <asp:HyperLink ID="HyperLink6" runat="server" CssClass="style3" 
                         NavigateUrl="~/Logout.aspx">Logout</asp:HyperLink>
                 </td>
