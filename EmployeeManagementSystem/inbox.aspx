@@ -14,18 +14,11 @@
                     AutoGenerateColumns="False" 
                     onselectedindexchanged="GridView1_SelectedIndexChanged">
                     <HeaderStyle BackColor="#CC0000" ForeColor="White" />
+                    <AlternatingRowStyle BackColor="#00FFCC" />
                     <Columns>
-                        <asp:TemplateField>
-                            <ItemTemplate>
-                                <%#Eval("eId") %>
-                            </ItemTemplate>
-                        </asp:TemplateField>
-                        <asp:TemplateField>
-                            <ItemTemplate>
-                                <%#Eval("eData") %>
-                            </ItemTemplate>
-                        </asp:TemplateField>
-                        <asp:TemplateField>
+                        <asp:BoundField HeaderText="Employee Id" DataField="eId"/>
+                        <asp:BoundField HeaderText="Date" DataField="eData"/>
+                        <asp:TemplateField HeaderText="View">
                             <ItemTemplate>
                                 <asp:LinkButton ID="LinkButton1" runat="server" OnCommand="abc" CommandName='<%#Eval("eMsgId") %>'>View</asp:LinkButton>
                             </ItemTemplate>

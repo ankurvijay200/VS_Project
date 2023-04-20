@@ -37,6 +37,30 @@
                     style="color: #CC0000; font-style: italic" ValidationGroup="a"></asp:RequiredFieldValidator>
             </td>
         </tr>
+        <tr>
+            <td class="style2" colspan="2" 
+                style="font-size: large; font-style: italic; text-decoration: underline">
+                Recently Sended Message.</td>
+        </tr>
+        <tr>
+            <td class="style2" colspan="2" 
+                style="font-size: large; font-style: italic; text-decoration: underline">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+                    Width="100%">
+                    <AlternatingRowStyle BackColor="#00FF99" />
+                    <HeaderStyle BackColor="#CC0000" ForeColor="White" />
+                    <Columns>
+                        <asp:BoundField HeaderText="Message Id" DataField="eMsgId"/>
+                        <asp:BoundField HeaderText="Date" DataField="eData"/>
+                        <asp:TemplateField HeaderText="View">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="LinkButton1" runat="server" OnCommand="abc" CommandName='<%#Eval("eMsgId") %>'>View</asp:LinkButton>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                </asp:GridView>
+            </td>
+        </tr>
     </table>
 </asp:Content>
 

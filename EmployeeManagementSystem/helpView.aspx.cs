@@ -36,4 +36,32 @@ public partial class helpView : System.Web.UI.Page
                 Label4.Text = "Completed";
         Label5.Text = ds.Tables[0].Rows[0][3].ToString();
     }
+    protected void Button4_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("inbox.aspx");
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        var msgId = Request.QueryString["reqid"].ToString();
+        string query = "update employeeManagementHelp set eStatus=0 where eMsgId="+msgId;
+        cd = new SqlCommand(query,con);
+        cd.ExecuteNonQuery();
+        Response.Write("<script>alert('Updated Successfully..')</script>");
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        var msgId = Request.QueryString["reqid"].ToString();
+        string query = "update employeeManagementHelp set eStatus=1 where eMsgId=" + msgId;
+        cd = new SqlCommand(query, con);
+        cd.ExecuteNonQuery();
+        Response.Write("<script>alert('Updated Successfully..')</script>");
+    }
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        var msgId = Request.QueryString["reqid"].ToString();
+        string query = "update employeeManagementHelp set eStatus=2 where eMsgId=" + msgId;
+        cd = new SqlCommand(query, con);
+        cd.ExecuteNonQuery();
+        Response.Write("<script>alert('Updated Successfully..')</script>");
+    }
 }

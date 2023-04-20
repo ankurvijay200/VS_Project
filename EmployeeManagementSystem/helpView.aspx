@@ -45,15 +45,15 @@
         </tr>
         <tr>
             <td class="style4" colspan="2" style="text-align: center">
-                <asp:Button ID="Button1" runat="server" style="background-color: #0099FF" 
-                    Text="Received" Width="10%" />
-                <asp:Button ID="Button2" runat="server" 
+                <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
+                    style="background-color: #0099FF" Text="Received" Width="10%" />
+                <asp:Button ID="Button2" runat="server" onclick="Button2_Click" 
                     style="color: #000000; background-color: #FFFF00" Text="Processing" 
                     Width="10%" />
-                <asp:Button ID="Button3" runat="server" style="background-color: #00CC00" 
-                    Text="Completed" Width="10%" />
-                <asp:Button ID="Button4" runat="server" style="background-color: #FF3300" 
-                    Text="Back" Width="10%" />
+                <asp:Button ID="Button3" runat="server" onclick="Button3_Click" 
+                    style="background-color: #00CC00" Text="Completed" Width="10%" />
+                <asp:Button ID="Button4" runat="server" onclick="Button4_Click" 
+                    style="background-color: #FF3300" Text="Back" Width="10%" />
             </td>
         </tr>
     </table>

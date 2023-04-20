@@ -11,11 +11,21 @@ public partial class help : System.Web.UI.Page
 {
     SqlConnection con;
     SqlCommand cd;
+    SqlDataAdapter da;
     protected void Page_Load(object sender, EventArgs e)
     {
         TextBox1.Text = Session["eid"].ToString();
         con = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=newTestDatabase;Integrated Security=True");
         con.Open();
+
+        string query = "select * from employeeManagementHelp where eId=" + Session["eid"].ToString();
+        DataSet ds = new DataSet();
+        da = new SqlDataAdapter(query, con);
+
+        da.Fill(ds);
+
+        GridView1.DataSource = ds;
+        GridView1.DataBind();
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
@@ -25,5 +35,9 @@ public partial class help : System.Web.UI.Page
         cd.ExecuteNonQuery();
         TextBox2.Text = null;
         Response.Write("<script>alert('We will Update You Soon...')</script>");
+    }
+    public void abc(object sender, CommandEventArgs e)
+    {
+        Response.Redirect("helpViewEmployee.aspx?reqid=" + e.CommandName.ToString());
     }
 }
