@@ -76,6 +76,22 @@ This repository is a starting point to learn about and engage in .NET and .NET o
         - Timer
         - UpdatePanel
         - UpdateProgress
+### Employee Management System :- Folder Name :EmployeeManagementSystem
+- Login (Admin & Employee)
+    - As Admin
+        - New Employee
+        - Search Employee
+        - Edit Employee
+        - Delete Employee
+        - All Employee
+        - Your Profile
+        - Inbox
+        - Logout
+    - As Employee
+        - Your Profile
+        - Help desk
+        - Inbox
+        - Logout
 
 ## Support
 
