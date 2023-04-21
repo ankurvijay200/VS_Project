@@ -16,6 +16,15 @@
         {
             text-align: center;
         }
+        .style4
+        {
+            text-decoration: none;
+            color: #000000;
+        }
+        .style5
+        {
+            color: #000000;
+        }
     </style>
 </head>
 <body style="background-color: #00FFFF">
@@ -30,14 +39,17 @@
             </tr>
             <tr>
                 <td class="style2" width="14.2%">
-                    <asp:HyperLink ID="HyperLink4" runat="server" Width="90%">Home</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink4" runat="server" Width="90%" CssClass="style4" 
+                        NavigateUrl="~/adminHome.aspx">Home</asp:HyperLink>
                 </td>
                 <td class="style2" width="14.2%">
-                    <asp:DropDownList ID="DropDownList1" runat="server" Width="90%">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Width="90%" 
+                        AutoPostBack="True" onselectedindexchanged="DropDownList1_SelectedIndexChanged">
                         <asp:ListItem>Users</asp:ListItem>
                         <asp:ListItem>New User</asp:ListItem>
                         <asp:ListItem>Delete User</asp:ListItem>
                         <asp:ListItem>Edit user</asp:ListItem>
+                        <asp:ListItem>All Users</asp:ListItem>
                         <asp:ListItem>Search user</asp:ListItem>
                     </asp:DropDownList>
                 </td>
@@ -61,17 +73,18 @@
                     </asp:DropDownList>
                 </td>
                 <td class="style2" width="14.2%">
-                    <asp:HyperLink ID="HyperLink3" runat="server" Width="90%">Contact</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink3" runat="server" Width="90%" CssClass="style5">Contact</asp:HyperLink>
                 </td>
                 <td class="style2" width="14.2%">
-                    <asp:HyperLink ID="HyperLink2" runat="server" Width="90%">Your Profile</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" Width="90%" CssClass="style5">Your Profile</asp:HyperLink>
                 </td>
                 <td class="style2" width="14.2%">
-                    <asp:HyperLink ID="HyperLink1" runat="server" Width="90%">Logout</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink1" runat="server" Width="90%" CssClass="style4" 
+                        NavigateUrl="~/logout.aspx">Logout</asp:HyperLink>
                 </td>
             </tr>
         </table>
-&nbsp;<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
     </div>

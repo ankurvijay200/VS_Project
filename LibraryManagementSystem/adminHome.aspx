@@ -3,9 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table class="style1">
+    <table class="style1" border="1" cellpadding="2" cellspacing="1">
         <tr>
-            <td style="text-align: center">
+            <td style="text-align: center; font-style: italic; font-size: large;">
                 Home</td>
         </tr>
         <tr>

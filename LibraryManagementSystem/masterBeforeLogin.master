@@ -23,7 +23,7 @@
                     Library Management</td>
             </tr>
         </table>
-&nbsp;<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
     </div>

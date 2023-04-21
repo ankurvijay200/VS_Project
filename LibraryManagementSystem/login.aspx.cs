@@ -29,9 +29,10 @@ public partial class login : System.Web.UI.Page
             if (ds.Tables[0].Rows[0][6].ToString() == TextBox2.Text)
             {
                 Session["libIdUser"] = TextBox1.Text;
+                Session["libUserRole"] = ds.Tables[0].Rows[0][8].ToString();
                 if (ds.Tables[0].Rows[0][8].ToString() == "0")
                 {
-                    Response.Write("<script>alert('Welcome Admin.')</script>");
+                    Response.Redirect("adminHome.aspx");
                 }
                 else if (ds.Tables[0].Rows[0][8].ToString() == "1")
                 {

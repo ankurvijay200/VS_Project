@@ -11,4 +11,9 @@ public partial class masterAdmin : System.Web.UI.MasterPage
     {
 
     }
+    protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        if (DropDownList1.SelectedIndex == 1)
+            Response.Redirect("newUser.aspx");
+    }
 }
