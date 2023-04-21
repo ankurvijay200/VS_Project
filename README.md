@@ -76,7 +76,7 @@ This repository is a starting point to learn about and engage in .NET and .NET o
         - Timer
         - UpdatePanel
         - UpdateProgress
-### Projects 
+### Projects :-
 - Employee Management System :- Folder Name : EmployeeManagementSystem
     - Login (Admin & Employee)
         - As Admin
@@ -92,7 +92,7 @@ This repository is a starting point to learn about and engage in .NET and .NET o
             - Your Profile
             - Help desk
             - Inbox
-        - Logout
+            - Logout
 
 ## Support
 
