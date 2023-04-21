@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterAdmin.master.cs" Inherits="masterAdmin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: #00FFFF">
+    <form id="form1" runat="server">
+    <div>
+        <table border="1" cellpadding="2" cellspacing="1" class="style1">
+            <tr>
+                <td colspan="7" 
+                    style="font-family: 'Arial Black'; font-size: xx-large; color: #FFFFFF; background-color: #CC0000">
+                    Library Management
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" width="14.2%">
+                    <asp:HyperLink ID="HyperLink4" runat="server" Width="90%">Home</asp:HyperLink>
+                </td>
+                <td class="style2" width="14.2%">
+                    <asp:DropDownList ID="DropDownList1" runat="server" Width="90%">
+                        <asp:ListItem>Users</asp:ListItem>
+                        <asp:ListItem>New User</asp:ListItem>
+                        <asp:ListItem>Delete User</asp:ListItem>
+                        <asp:ListItem>Edit user</asp:ListItem>
+                        <asp:ListItem>Search user</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td class="style2" width="14.2%">
+                    <asp:DropDownList ID="DropDownList3" runat="server" Width="90%">
+                        <asp:ListItem>Book</asp:ListItem>
+                        <asp:ListItem>New Book</asp:ListItem>
+                        <asp:ListItem>Delete Book</asp:ListItem>
+                        <asp:ListItem>All Books</asp:ListItem>
+                        <asp:ListItem>Search Book</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td class="style2" width="14.2%">
+                    <asp:DropDownList ID="DropDownList4" runat="server" Width="90%">
+                        <asp:ListItem>Management</asp:ListItem>
+                        <asp:ListItem>Issue Book</asp:ListItem>
+                        <asp:ListItem>Subbmit Book</asp:ListItem>
+                        <asp:ListItem>Re-issue</asp:ListItem>
+                        <asp:ListItem>Lost Book</asp:ListItem>
+                        <asp:ListItem>Book Requests</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td class="style2" width="14.2%">
+                    <asp:HyperLink ID="HyperLink3" runat="server" Width="90%">Contact</asp:HyperLink>
+                </td>
+                <td class="style2" width="14.2%">
+                    <asp:HyperLink ID="HyperLink2" runat="server" Width="90%">Your Profile</asp:HyperLink>
+                </td>
+                <td class="style2" width="14.2%">
+                    <asp:HyperLink ID="HyperLink1" runat="server" Width="90%">Logout</asp:HyperLink>
+                </td>
+            </tr>
+        </table>
+&nbsp;<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
