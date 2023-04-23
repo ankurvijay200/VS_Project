@@ -1,39 +1,49 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterAdmin.master" AutoEventWireup="true" CodeFile="newUser.aspx.cs" Inherits="newUser" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterAdmin.master" AutoEventWireup="true" CodeFile="adminEditUser.aspx.cs" Inherits="adminEditUser" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table border="1" cellpadding="2" cellspacing="1" class="style1">
         <tr>
-            <td class="style2" colspan="2">
-                New User</td>
+            <td class="style2" colspan="2" style="font-size: large; font-style: italic">
+                Edit User Details</td>
+        </tr>
+        <tr>
+            <td class="style2" width="50%">
+                Enter User ID</td>
+            <td class="style2" width="50%">
+                <asp:TextBox ID="TextBox1" runat="server" Width="60%"></asp:TextBox>
+                <asp:Button ID="Button1" runat="server" Text="Search" Width="20%" 
+                    style="color: #FFFFFF; background-color: #0099FF" 
+                    onclick="Button1_Click" />
+            </td>
         </tr>
         <tr>
             <td class="style2" width="50%">
                 User Id</td>
             <td class="style2" width="50%">
-                <asp:TextBox ID="TextBox1" runat="server" Width="90%" ReadOnly="True"></asp:TextBox>
+                <asp:Label ID="Label1" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
             <td class="style2" width="50%">
                 Name</td>
             <td class="style2" width="50%">
-                <asp:TextBox ID="TextBox2" runat="server" Width="90%"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" Width="60%"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="style2" width="50%">
                 Father Name</td>
             <td class="style2" width="50%">
-                <asp:TextBox ID="TextBox3" runat="server" Width="90%"></asp:TextBox>
+                <asp:TextBox ID="TextBox3" runat="server" Width="60%"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="style2" width="50%">
                 Class</td>
             <td class="style2" width="50%">
-                <asp:DropDownList ID="DropDownList5" runat="server" Width="90%">
+                <asp:DropDownList ID="DropDownList5" runat="server" Width="60%">
                     <asp:ListItem>1</asp:ListItem>
                     <asp:ListItem>2</asp:ListItem>
                     <asp:ListItem>3</asp:ListItem>
@@ -53,22 +63,28 @@
             <td class="style2" width="50%">
                 City</td>
             <td class="style2" width="50%">
-                <asp:TextBox ID="TextBox4" runat="server" Width="90%"></asp:TextBox>
+                <asp:TextBox ID="TextBox4" runat="server" Width="60%"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="style2" width="50%">
-                Contact
-            </td>
+                Contact</td>
             <td class="style2" width="50%">
-                <asp:TextBox ID="TextBox5" runat="server" Width="90%"></asp:TextBox>
+                <asp:TextBox ID="TextBox5" runat="server" Width="60%"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="style2" width="50%">
                 Password</td>
             <td class="style2" width="50%">
-                <asp:TextBox ID="TextBox6" runat="server" Width="90%"></asp:TextBox>
+                <asp:TextBox ID="TextBox6" runat="server" Width="60%"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2" width="50%">
+                Fine</td>
+            <td class="style2" width="50%">
+                <asp:TextBox ID="TextBox7" runat="server" Width="60%"></asp:TextBox>
             </td>
         </tr>
         <tr>
@@ -85,8 +101,8 @@
         </tr>
         <tr>
             <td class="style2" colspan="2">
-                <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
-                    style="background-color: #FFFF00" Text="Register" Width="20%" />
+                <asp:Button ID="Button2" runat="server" style="background-color: #FFFF00" 
+                    Text="Update" Width="20%" onclick="Button2_Click" />
             </td>
         </tr>
     </table>

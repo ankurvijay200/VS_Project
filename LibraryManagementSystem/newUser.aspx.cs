@@ -17,6 +17,13 @@ public partial class newUser : System.Web.UI.Page
     {
         con = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=newTestDatabase;Integrated Security=True");
         con.Open();
+
+        string Nquery = "select max(id) from LibraryUsers";
+        DataSet ds = new DataSet();
+        da = new SqlDataAdapter(Nquery, con);
+        da.Fill(ds);
+
+        TextBox1.Text = (Convert.ToInt32(ds.Tables[0].Rows[0][0].ToString()) + 1).ToString();
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
@@ -24,8 +31,16 @@ public partial class newUser : System.Web.UI.Page
         cd = new SqlCommand(query, con);
         cd.ExecuteNonQuery();
 
-        TextBox1.Text = TextBox2.Text = TextBox3.Text = TextBox4.Text = TextBox5.Text = TextBox6.Text = null;
+        TextBox2.Text = TextBox3.Text = TextBox4.Text = TextBox5.Text = TextBox6.Text = null;
         RadioButtonList1.SelectedIndex = -1;
         DropDownList5.SelectedIndex = -1;
+        Response.Write("<script>alert('New User Registered Successfully..')</script>");
+
+        string Nquery = "select max(id) from LibraryUsers";
+        DataSet ds = new DataSet();
+        da = new SqlDataAdapter(Nquery, con);
+        da.Fill(ds);
+
+        TextBox1.Text = (Convert.ToInt32(ds.Tables[0].Rows[0][0].ToString()) + 1).ToString();
     }
 }

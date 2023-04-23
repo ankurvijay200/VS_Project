@@ -15,5 +15,17 @@ public partial class masterAdmin : System.Web.UI.MasterPage
     {
         if (DropDownList1.SelectedIndex == 1)
             Response.Redirect("newUser.aspx");
+
+        if (DropDownList1.SelectedIndex == 2)
+            Response.Redirect("adminDeleteUser.aspx");
+
+        if (DropDownList1.SelectedIndex == 3)
+            Response.Redirect("adminEditUser.aspx");
+
+        if (DropDownList1.SelectedIndex == 4)
+            Response.Redirect("adminAllUsers.aspx");
+
+        if (DropDownList1.SelectedIndex == 5)
+            Response.Redirect("adminSearchUser.aspx");
     }
 }
