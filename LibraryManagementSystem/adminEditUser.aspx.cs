@@ -46,6 +46,10 @@ public partial class adminEditUser : System.Web.UI.Page
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
+        string query = "update LibraryUsers set name='"+TextBox2.Text+"',fName='"+TextBox3.Text+"',class='"+(DropDownList5.SelectedIndex + 1).ToString()+"',city='"+TextBox4.Text+"',contact='"+TextBox5.Text+"',pass='"+TextBox6.Text+"',fine="+TextBox7.Text+",userRole="+RadioButtonList1.SelectedIndex+" where id="+Label1.Text;
+        cd = new SqlCommand(query,con);
+        cd.ExecuteNonQuery();
 
+        Response.Write("<script>alert('Updated Successfully.')</script>");
     }
 }

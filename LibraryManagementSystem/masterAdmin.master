@@ -21,28 +21,25 @@
             text-decoration: none;
             color: #000000;
         }
-        .style5
-        {
-            color: #000000;
-        }
-    </style>
+        </style>
 </head>
 <body style="background-color: #00FFFF">
     <form id="form1" runat="server">
     <div>
         <table border="1" cellpadding="2" cellspacing="1" class="style1">
             <tr>
-                <td colspan="7" 
+                <td colspan="8" 
+                    
                     style="font-family: 'Arial Black'; font-size: xx-large; color: #FFFFFF; background-color: #CC0000">
                     Library Management
                 </td>
             </tr>
             <tr>
-                <td class="style2" width="14.2%">
+                <td class="style2" width="12.5%">
                     <asp:HyperLink ID="HyperLink4" runat="server" Width="90%" CssClass="style4" 
                         NavigateUrl="~/adminHome.aspx">Home</asp:HyperLink>
                 </td>
-                <td class="style2" width="14.2%">
+                <td class="style2" width="12.5%">
                     <asp:DropDownList ID="DropDownList1" runat="server" Width="90%" 
                         AutoPostBack="True" onselectedindexchanged="DropDownList1_SelectedIndexChanged">
                         <asp:ListItem>Users</asp:ListItem>
@@ -53,7 +50,7 @@
                         <asp:ListItem>Search user</asp:ListItem>
                     </asp:DropDownList>
                 </td>
-                <td class="style2" width="14.2%">
+                <td class="style2" width="12.5%">
                     <asp:DropDownList ID="DropDownList3" runat="server" Width="90%">
                         <asp:ListItem>Book</asp:ListItem>
                         <asp:ListItem>New Book</asp:ListItem>
@@ -62,7 +59,7 @@
                         <asp:ListItem>Search Book</asp:ListItem>
                     </asp:DropDownList>
                 </td>
-                <td class="style2" width="14.2%">
+                <td class="style2" width="12.5%">
                     <asp:DropDownList ID="DropDownList4" runat="server" Width="90%">
                         <asp:ListItem>Management</asp:ListItem>
                         <asp:ListItem>Issue Book</asp:ListItem>
@@ -72,13 +69,18 @@
                         <asp:ListItem>Book Requests</asp:ListItem>
                     </asp:DropDownList>
                 </td>
-                <td class="style2" width="14.2%">
-                    <asp:HyperLink ID="HyperLink3" runat="server" Width="90%" CssClass="style5">Contact</asp:HyperLink>
+                <td class="style2" width="12.5%">
+                    <asp:HyperLink ID="HyperLink3" runat="server" Width="90%" CssClass="style4" 
+                        NavigateUrl="~/adminContact.aspx">Contact</asp:HyperLink>
                 </td>
-                <td class="style2" width="14.2%">
-                    <asp:HyperLink ID="HyperLink2" runat="server" Width="90%" CssClass="style5">Your Profile</asp:HyperLink>
+                <td class="style2" width="12.5%">
+                    <asp:HyperLink ID="HyperLink5" runat="server" Width="90%">Inbox</asp:HyperLink>
                 </td>
-                <td class="style2" width="14.2%">
+                <td class="style2" width="12.5%">
+                    <asp:HyperLink ID="HyperLink2" runat="server" Width="90%" CssClass="style4" 
+                        NavigateUrl="~/adminYourProfile.aspx">Your Profile</asp:HyperLink>
+                </td>
+                <td class="style2" width="12.5%">
                     <asp:HyperLink ID="HyperLink1" runat="server" Width="90%" CssClass="style4" 
                         NavigateUrl="~/logout.aspx">Logout</asp:HyperLink>
                 </td>

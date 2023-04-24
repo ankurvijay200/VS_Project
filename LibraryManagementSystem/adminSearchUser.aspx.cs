@@ -37,9 +37,9 @@ public partial class adminSearchUser : System.Web.UI.Page
             if (userRole == "0")
                 Label8.Text = "Admin";
             else if (userRole == "1")
-                Label8.Text = "Student";
-            else
                 Label8.Text = "Teacher";
+            else
+                Label8.Text = "Student";
 
             Button2.Visible = true;
             Button3.Visible = false;

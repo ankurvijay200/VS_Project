@@ -36,11 +36,11 @@ public partial class login : System.Web.UI.Page
                 }
                 else if (ds.Tables[0].Rows[0][8].ToString() == "1")
                 {
-                    Response.Write("<script>alert('Welcome student.')</script>");
+                    Response.Write("<script>alert('Welcome Teacher.')</script>");
                 }
                 else
                 {
-                    Response.Write("<script>alert('Welcome Teacher.')</script>");
+                    Response.Write("<script>alert('Welcome Student.')</script>");
                 }
             }
             else
