@@ -30,6 +30,7 @@ public partial class login : System.Web.UI.Page
             {
                 Session["libIdUser"] = TextBox1.Text;
                 Session["libUserRole"] = ds.Tables[0].Rows[0][8].ToString();
+                Session["libUserName"] = ds.Tables[0].Rows[0][1].ToString();
                 if (ds.Tables[0].Rows[0][8].ToString() == "0")
                 {
                     Response.Redirect("adminHome.aspx");

@@ -39,10 +39,17 @@ public partial class adminContact : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        string query ="";
+        string Nquery = "select max(msgId) from LibraryContact";
+        DataSet ds = new DataSet();
+        da = new SqlDataAdapter(Nquery, con);
+        da.Fill(ds);
+
+        string query = "insert into LibraryContact values(" + (Convert.ToInt32(ds.Tables[0].Rows[0][0].ToString()) + 1) + "," + Convert.ToInt32(Label1.Text) + "," + Convert.ToInt32(TextBox1.Text) + "," + 1 + ",'" + DateTime.Now.ToLongDateString() + "','" + Session["libUserName"].ToString() + "','" + Label2.Text + "','" + TextBox2.Text + "')";
         cd = new SqlCommand(query,con);
         cd.ExecuteNonQuery();
 
+        Label2.Text = TextBox1.Text = TextBox2.Text = null;
+        Button1.Visible = false;
         Response.Write("<script>alert('Message Send Successfully.')</script>");
     }
 }
