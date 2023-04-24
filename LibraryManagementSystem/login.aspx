@@ -27,7 +27,8 @@
         <td class="style2" width="50%">
             Enter Password</td>
         <td width="50%">
-            <asp:TextBox ID="TextBox2" runat="server" ValidationGroup="a" Width="60%"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server" ValidationGroup="a" Width="60%" 
+                TextMode="Password"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
                 ControlToValidate="TextBox2" ErrorMessage="Enter Password" ValidationGroup="a"></asp:RequiredFieldValidator>
         </td>

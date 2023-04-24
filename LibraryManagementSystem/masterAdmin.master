@@ -74,7 +74,8 @@
                         NavigateUrl="~/adminContact.aspx">Contact</asp:HyperLink>
                 </td>
                 <td class="style2" width="12.5%">
-                    <asp:HyperLink ID="HyperLink5" runat="server" Width="90%">Inbox</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink5" runat="server" Width="90%" CssClass="style4" 
+                        NavigateUrl="~/adminInbox.aspx">Inbox</asp:HyperLink>
                 </td>
                 <td class="style2" width="12.5%">
                     <asp:HyperLink ID="HyperLink2" runat="server" Width="90%" CssClass="style4" 
