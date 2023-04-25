@@ -28,4 +28,21 @@ public partial class masterAdmin : System.Web.UI.MasterPage
         if (DropDownList1.SelectedIndex == 5)
             Response.Redirect("adminSearchUser.aspx");
     }
+    protected void DropDownList3_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        if (DropDownList3.SelectedIndex == 1)
+            Response.Redirect("adminNewBook.aspx");
+
+        if (DropDownList3.SelectedIndex == 2)
+            Response.Redirect("adminDeleteBook.aspx");
+
+        if (DropDownList3.SelectedIndex == 3)
+            Response.Redirect("adminAllBooks.aspx");
+
+        if (DropDownList3.SelectedIndex == 4)
+            Response.Redirect("adminSearchBook.aspx");
+
+        if (DropDownList3.SelectedIndex == 5)
+            Response.Redirect("adminRequestBook.aspx");
+    }
 }

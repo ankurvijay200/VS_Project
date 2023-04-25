@@ -51,12 +51,14 @@
                     </asp:DropDownList>
                 </td>
                 <td class="style2" width="12.5%">
-                    <asp:DropDownList ID="DropDownList3" runat="server" Width="90%">
+                    <asp:DropDownList ID="DropDownList3" runat="server" Width="90%" 
+                        AutoPostBack="True" onselectedindexchanged="DropDownList3_SelectedIndexChanged">
                         <asp:ListItem>Book</asp:ListItem>
                         <asp:ListItem>New Book</asp:ListItem>
                         <asp:ListItem>Delete Book</asp:ListItem>
                         <asp:ListItem>All Books</asp:ListItem>
                         <asp:ListItem>Search Book</asp:ListItem>
+                        <asp:ListItem>Request Book</asp:ListItem>
                     </asp:DropDownList>
                 </td>
                 <td class="style2" width="12.5%">
