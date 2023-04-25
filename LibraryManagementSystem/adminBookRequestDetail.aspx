@@ -57,6 +57,12 @@
                 <asp:Label ID="Label6" runat="server"></asp:Label>
             </td>
         </tr>
+        <tr>
+            <td class="style5" colspan="2">
+                <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
+                    style="color: #FFFFFF; background-color: #00CC00" Text="Back" Width="20%" />
+            </td>
+        </tr>
     </table>
 </asp:Content>
 

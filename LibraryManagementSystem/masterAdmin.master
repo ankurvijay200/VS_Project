@@ -59,10 +59,12 @@
                         <asp:ListItem>All Books</asp:ListItem>
                         <asp:ListItem>Search Book</asp:ListItem>
                         <asp:ListItem>Request Book</asp:ListItem>
+                        <asp:ListItem>My Book Requests</asp:ListItem>
                     </asp:DropDownList>
                 </td>
                 <td class="style2" width="12.5%">
-                    <asp:DropDownList ID="DropDownList4" runat="server" Width="90%">
+                    <asp:DropDownList ID="DropDownList4" runat="server" Width="90%" 
+                        AutoPostBack="True" onselectedindexchanged="DropDownList4_SelectedIndexChanged">
                         <asp:ListItem>Management</asp:ListItem>
                         <asp:ListItem>Issue Book</asp:ListItem>
                         <asp:ListItem>Subbmit Book</asp:ListItem>

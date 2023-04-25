@@ -7,26 +7,21 @@ using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
 
-public partial class allBookRequests : System.Web.UI.Page
+public partial class adminMyBookRequests : System.Web.UI.Page
 {
     SqlConnection con;
     SqlDataAdapter da;
-
     protected void Page_Load(object sender, EventArgs e)
     {
         con = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=newTestDatabase;Integrated Security=True");
         con.Open();
 
-        string query = "select * from LibraryBookRequests where reqStatus=" + 0 + " or reqStatus="+1;
+        string query = "select * from LibraryBookRequests where userId="+Convert.ToInt32(Session["libIdUser"].ToString());
         DataSet ds = new DataSet();
-        da = new SqlDataAdapter(query,con);
+        da = new SqlDataAdapter(query, con);
         da.Fill(ds);
 
         GridView1.DataSource = ds;
         GridView1.DataBind();
-    }
-    public void abc(object sender, CommandEventArgs e)
-    {
-        Response.Redirect("adminBookRequestDetail.aspx?reqid=" + e.CommandName.ToString());
     }
 }

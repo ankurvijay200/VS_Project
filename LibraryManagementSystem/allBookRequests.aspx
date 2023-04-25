@@ -6,7 +6,7 @@
     <table border="1" cellpadding="2" cellspacing="1" class="style1">
         <tr>
             <td class="style2" style="font-style: italic; font-size: large">
-                My Book Requests</td>
+                All Book Requests</td>
         </tr>
         <tr>
             <td class="style2">
