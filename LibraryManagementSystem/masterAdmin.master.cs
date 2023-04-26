@@ -50,6 +50,9 @@ public partial class masterAdmin : System.Web.UI.MasterPage
     }
     protected void DropDownList4_SelectedIndexChanged(object sender, EventArgs e)
     {
+        if (DropDownList4.SelectedIndex == 1)
+            Response.Redirect("adminIssueBook.aspx");
+
         if (DropDownList4.SelectedIndex == 5)
             Response.Redirect("allBookRequests.aspx");
     }
