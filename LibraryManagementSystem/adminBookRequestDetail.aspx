@@ -61,6 +61,8 @@
             <td class="style5" colspan="2">
                 <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
                     style="color: #FFFFFF; background-color: #00CC00" Text="Back" Width="20%" />
+                <asp:Button ID="Button2" runat="server" onclick="Button2_Click" 
+                    style="background-color: #FFFF00" Text="Update Status" Width="20%" />
             </td>
         </tr>
     </table>

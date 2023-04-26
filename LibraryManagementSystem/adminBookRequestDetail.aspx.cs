@@ -48,4 +48,8 @@ public partial class adminBookRequestDetail : System.Web.UI.Page
     {
         Response.Redirect("allBookRequests.aspx");
     }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("adminBookRequestStatusUpdate.aspx?reqid="+Label1.Text);
+    }
 }
