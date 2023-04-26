@@ -24,4 +24,8 @@ public partial class adminMyBookRequests : System.Web.UI.Page
         GridView1.DataSource = ds;
         GridView1.DataBind();
     }
+    public void abc(object sender, CommandEventArgs e)
+    {
+        Response.Redirect("adminMyBookRequestDetail.aspx?reqid=" + e.CommandName.ToString());
+    }
 }

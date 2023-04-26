@@ -10,9 +10,20 @@
         </tr>
         <tr>
             <td class="style2">
-                <asp:GridView ID="GridView1" runat="server" Width="100%">
+                <asp:GridView ID="GridView1" runat="server" Width="100%" 
+                    AutoGenerateColumns="False">
                     <AlternatingRowStyle BackColor="#00FFCC" />
                     <HeaderStyle BackColor="#CC0000" ForeColor="White" />
+                    <Columns>
+                            <asp:BoundField HeaderText="Request Id" DataField="reqId"/>                        
+                        <asp:BoundField HeaderText="Requester Name" DataField="userName"/>                        
+                        <asp:BoundField HeaderText="Book Name" DataField="bookName"/>   
+                        <asp:TemplateField HeaderText="View">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="LinkButton1" runat="server" OnCommand="abc" CommandName='<%#Eval("reqId") %>'>View</asp:LinkButton>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        </Columns>         
                 </asp:GridView>
             </td>
         </tr>
