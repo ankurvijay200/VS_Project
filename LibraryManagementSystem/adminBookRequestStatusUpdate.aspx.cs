@@ -18,18 +18,30 @@ public partial class adminBookRequestStatusUpdate : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        //0-
+        string query = "update LibraryBookRequests set reqStatus=" + 0 + " where reqId="+Convert.ToInt32(Label1.Text);
+        cd = new SqlCommand(query,con);
+        cd.ExecuteNonQuery();
+        Response.Redirect("allBookRequests.aspx");
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
-        //1-
+        string query = "update LibraryBookRequests set reqStatus=" + 1 + " where reqId=" + Convert.ToInt32(Label1.Text);
+        cd = new SqlCommand(query, con);
+        cd.ExecuteNonQuery();
+        Response.Redirect("allBookRequests.aspx");
     }
     protected void Button3_Click(object sender, EventArgs e)
     {
-        //2-
+        string query = "update LibraryBookRequests set reqStatus=" + 2 + " where reqId=" + Convert.ToInt32(Label1.Text);
+        cd = new SqlCommand(query, con);
+        cd.ExecuteNonQuery();
+        Response.Redirect("allBookRequests.aspx");
     }
     protected void Button4_Click(object sender, EventArgs e)
     {
-        //3-
+        string query = "update LibraryBookRequests set reqStatus=" + 3 + " where reqId=" + Convert.ToInt32(Label1.Text);
+        cd = new SqlCommand(query, con);
+        cd.ExecuteNonQuery();
+        Response.Redirect("allBookRequests.aspx");
     }
 }
