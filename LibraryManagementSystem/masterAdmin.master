@@ -71,6 +71,7 @@
                         <asp:ListItem>Re-issue</asp:ListItem>
                         <asp:ListItem>Lost Book</asp:ListItem>
                         <asp:ListItem>Book Requests</asp:ListItem>
+                        <asp:ListItem>Fine Details</asp:ListItem>
                     </asp:DropDownList>
                 </td>
                 <td class="style2" width="12.5%">

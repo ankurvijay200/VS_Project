@@ -55,5 +55,8 @@ public partial class masterAdmin : System.Web.UI.MasterPage
 
         if (DropDownList4.SelectedIndex == 5)
             Response.Redirect("allBookRequests.aspx");
+
+        if (DropDownList4.SelectedIndex == 6)
+            Response.Redirect("adminFine.aspx");
     }
 }
