@@ -53,6 +53,13 @@
             </td>
         </tr>
         <tr>
+            <td class="style2" width="50%">
+                Issued To</td>
+            <td class="style2" width="50%">
+                <asp:Label ID="Label6" runat="server"></asp:Label>
+            </td>
+        </tr>
+        <tr>
             <td class="style2" colspan="2">
                 <asp:Button ID="Button2" runat="server" onclick="Button2_Click" 
                     style="color: #FFFFFF; background-color: #00CC00" Text="Submit" Width="20%" />

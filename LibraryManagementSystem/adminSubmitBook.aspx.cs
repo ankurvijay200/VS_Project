@@ -33,7 +33,8 @@ public partial class adminSubmitBook : System.Web.UI.Page
             {
                 Label3.Text = ds.Tables[0].Rows[0][5].ToString();
                 Label4.Text = DateTime.Now.ToLongDateString();
-
+                Label6.Text = ds.Tables[0].Rows[0][4].ToString();
+                Button2.Visible = true;
                 string date1 = ds.Tables[0].Rows[0][5].ToString();
                 string date2 = DateTime.Now.ToLongDateString();
                 DateTime dt1 = DateTime.Parse(date1);
@@ -53,7 +54,7 @@ public partial class adminSubmitBook : System.Web.UI.Page
             else
             {
                 Label3.Text = "Not Issued.";
-                Label4.Text = Label5.Text = null;
+                Label4.Text = Label5.Text = Label6.Text = null;
                 Button2.Visible = false;
             }
         }
@@ -66,15 +67,24 @@ public partial class adminSubmitBook : System.Web.UI.Page
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
-        string query = "update LibraryBooks set bStatus=" + 0 + ", bIssuerid=" + null + ", bIssueDate=" + null + " where bId="+Convert.ToInt32(TextBox1.Text);
+        string query = "update LibraryBooks set bStatus=" + 0 + ", bIssuerid=" + 0 + ", bIssueDate='" + 0 + "' where bId="+Convert.ToInt32(TextBox1.Text);
         cd = new SqlCommand(query, con);
         cd.ExecuteNonQuery();
 
         if (Convert.ToInt32(Label5.Text) > 0)
         {
-            string query1 = "";
+            string Nquery = "select max(fId) from LibraryFineLostBook";
+            DataSet ds = new DataSet();
+            da = new SqlDataAdapter(Nquery, con);
+            da.Fill(ds);
+
+            string query1 = "insert into LibraryFineLostBook values(" + (Convert.ToInt32(ds.Tables[0].Rows[0][0].ToString()) + 1) + "," + Convert.ToInt32(Label6.Text) + "," + Convert.ToInt32(TextBox1.Text) + "," + Convert.ToInt32(Label5.Text) + "," + 0 + ",'" + Label4.Text + "')";
             cd = new SqlCommand(query1, con);
             cd.ExecuteNonQuery();
         }
+
+        Response.Write("<script>alert('Book Submited Successfully.')</script>");
+        Label1.Text = Label2.Text = Label3.Text = Label4.Text = Label5.Text = Label6.Text = null;
+        TextBox1.Text = null;
     }
 }
