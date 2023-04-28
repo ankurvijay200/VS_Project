@@ -40,12 +40,20 @@ public partial class adminSubmitBook : System.Web.UI.Page
                 DateTime dt2 = DateTime.Parse(date2);
                 TimeSpan diff = dt2 - dt1;
                 int days = (int)diff.TotalDays;
-                Label5.Text = days.ToString();
+                if (days > 15)
+                {
+
+                    Label5.Text = ((days - 15) * 5).ToString();
+                }
+                else
+                {
+                    Label5.Text = "0";
+                }
             }
             else
             {
                 Label3.Text = "Not Issued.";
-                Label4.Text = Label5.Text = null; 
+                Label4.Text = Label5.Text = null;
                 Button2.Visible = false;
             }
         }
@@ -58,6 +66,15 @@ public partial class adminSubmitBook : System.Web.UI.Page
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
+        string query = "update LibraryBooks set bStatus=" + 0 + ", bIssuerid=" + null + ", bIssueDate=" + null + " where bId="+Convert.ToInt32(TextBox1.Text);
+        cd = new SqlCommand(query, con);
+        cd.ExecuteNonQuery();
 
+        if (Convert.ToInt32(Label5.Text) > 0)
+        {
+            string query1 = "";
+            cd = new SqlCommand(query1, con);
+            cd.ExecuteNonQuery();
+        }
     }
 }
