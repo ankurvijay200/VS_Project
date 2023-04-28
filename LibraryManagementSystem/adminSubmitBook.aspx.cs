@@ -41,7 +41,6 @@ public partial class adminSubmitBook : System.Web.UI.Page
                 TimeSpan diff = dt2 - dt1;
                 int days = (int)diff.TotalDays;
                 Label5.Text = days.ToString();
-                
             }
             else
             {
