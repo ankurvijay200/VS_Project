@@ -15,6 +15,14 @@ public partial class adminFineDetail : System.Web.UI.Page
         con = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=newTestDatabase;Integrated Security=True");
         con.Open();
 
+        string SumAmount = "SELECT SUM(amount) AS amount FROM LibraryFineLostBook;";
+        DataSet ds1 = new DataSet();
+        da = new SqlDataAdapter(SumAmount, con);
+        da.Fill(ds1);
+
+        if(ds1.Tables[0].Rows.Count > 0)
+            Label1.Text = ds1.Tables[0].Rows[0][0].ToString();
+
         string query = "select * from LibraryFineLostBook";
         DataSet ds = new DataSet();
         da = new SqlDataAdapter(query,con);
