@@ -30,6 +30,5 @@ public partial class adminFineDetail : System.Web.UI.Page
 
         GridView1.DataSource = ds;
         GridView1.DataBind();
-
     }
 }
