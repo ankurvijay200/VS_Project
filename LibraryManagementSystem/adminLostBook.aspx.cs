@@ -47,4 +47,8 @@ public partial class adminLostBook : System.Web.UI.Page
             Label2.Text = "No Book With This Id.";
         }
     }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+
+    }
 }

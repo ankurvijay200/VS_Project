@@ -49,7 +49,8 @@
         <tr>
             <td class="style2" colspan="2">
                 <asp:Button ID="Button2" runat="server" 
-                    style="color: #FFFFFF; background-color: #FF0000" Text="Submit" Width="20%" />
+                    style="color: #FFFFFF; background-color: #FF0000" Text="Submit" 
+                    Width="20%" onclick="Button2_Click" />
             </td>
         </tr>
     </table>
