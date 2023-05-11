@@ -23,6 +23,13 @@
         </tr>
         <tr>
             <td class="style2" width="50%">
+                Book Name</td>
+            <td class="style2" width="50%">
+                <asp:Label ID="Label2" runat="server"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2" width="50%">
                 Update Status</td>
             <td class="style2" width="50%">
                 <asp:Button ID="Button1" runat="server" CssClass="style5" 

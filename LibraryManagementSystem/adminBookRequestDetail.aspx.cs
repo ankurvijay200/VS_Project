@@ -50,6 +50,6 @@ public partial class adminBookRequestDetail : System.Web.UI.Page
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
-        Response.Redirect("adminBookRequestStatusUpdate.aspx?reqid="+Label1.Text);
+        Response.Redirect("adminBookRequestStatusUpdate.aspx?reqid="+Label1.Text+"&reqbName="+Label4.Text);
     }
 }

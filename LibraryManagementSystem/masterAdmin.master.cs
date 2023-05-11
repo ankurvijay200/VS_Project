@@ -56,6 +56,9 @@ public partial class masterAdmin : System.Web.UI.MasterPage
         if (DropDownList4.SelectedIndex == 2)
             Response.Redirect("adminSubmitBook.aspx");
 
+        if (DropDownList4.SelectedIndex == 4)
+            Response.Redirect("adminLostBook.aspx");
+
         if (DropDownList4.SelectedIndex == 5)
             Response.Redirect("allBookRequests.aspx");
 

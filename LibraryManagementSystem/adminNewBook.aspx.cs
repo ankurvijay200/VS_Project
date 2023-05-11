@@ -22,7 +22,8 @@ public partial class adminNewBook : System.Web.UI.Page
         da = new SqlDataAdapter(Nquery, con);
         da.Fill(ds);
 
-        Label1.Text = (Convert.ToInt32(ds.Tables[0].Rows[0][0].ToString()) + 1).ToString();
+            Label1.Text = (Convert.ToInt32(ds.Tables[0].Rows[0][0].ToString()) + 1).ToString();
+        
     }
     protected void Button1_Click(object sender, EventArgs e)
     {

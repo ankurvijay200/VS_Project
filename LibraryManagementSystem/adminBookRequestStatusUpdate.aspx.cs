@@ -13,6 +13,7 @@ public partial class adminBookRequestStatusUpdate : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         Label1.Text = Request.QueryString["reqid"].ToString();
+        Label2.Text = Request.QueryString["reqbName"].ToString();
         con = new SqlConnection(@"Data Source=.\sqlexpress;Initial Catalog=newTestDatabase;Integrated Security=True");
         con.Open();
     }
