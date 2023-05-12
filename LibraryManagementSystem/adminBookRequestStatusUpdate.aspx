@@ -45,6 +45,22 @@
                     Width="20%" />
             </td>
         </tr>
+        <tr>
+            <td class="style2" width="50%">
+                <asp:Label ID="Label3" runat="server" Text="Book Id"></asp:Label>
+            </td>
+            <td class="style2" width="50%">
+                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2" width="50%">
+                <asp:Label ID="Label4" runat="server" Text="Price"></asp:Label>
+            </td>
+            <td class="style2" width="50%">
+                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            </td>
+        </tr>
     </table>
 </asp:Content>
 
