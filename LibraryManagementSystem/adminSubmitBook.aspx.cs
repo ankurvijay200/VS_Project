@@ -61,7 +61,7 @@ public partial class adminSubmitBook : System.Web.UI.Page
         else
         {
             Label1.Text = "Book Not Found With This Id.";
-            Label2.Text = Label3.Text = Label4.Text = null;
+            Label2.Text = Label3.Text = Label4.Text = Label5.Text = Label6.Text = null;
             Button2.Visible = false;
         }
     }

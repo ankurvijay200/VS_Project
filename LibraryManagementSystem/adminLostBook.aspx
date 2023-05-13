@@ -23,6 +23,9 @@
             <td class="style2" width="50%">
                 <asp:Label ID="Label1" runat="server"></asp:Label>
                 <asp:Label ID="Label2" runat="server"></asp:Label>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                    ControlToValidate="TextBox1" ErrorMessage="Enter Book Id" 
+                    style="color: #FF0000"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>

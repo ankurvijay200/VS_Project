@@ -49,6 +49,10 @@
         <td class="style6" colspan="2">
             <asp:Button ID="Button1" runat="server" Text="Sent" Width="20%" 
                 onclick="Button1_Click" style="color: #FFFFFF; background-color: #0099FF" />
+            <br />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                ControlToValidate="TextBox2" ErrorMessage="Enter Message" 
+                style="color: #FF0000"></asp:RequiredFieldValidator>
         </td>
     </tr>
 </table>

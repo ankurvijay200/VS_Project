@@ -1,6 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterAdmin.master" AutoEventWireup="true" CodeFile="adminRequestBook.aspx.cs" Inherits="adminRequestBook" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .style5
+        {
+            color: #FF0000;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="style1" border="1" cellpadding="2" cellspacing="1">
@@ -40,6 +46,12 @@
         <td class="style2" colspan="2">
             <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
                 style="background-color: #FFFF00" Text="Request" Width="20%" />
+            <br />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                ControlToValidate="TextBox1" CssClass="style5" ErrorMessage="Enter Book Name."></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                ControlToValidate="TextBox2" CssClass="style5" 
+                ErrorMessage="Enter Author Name."></asp:RequiredFieldValidator>
         </td>
     </tr>
 </table>

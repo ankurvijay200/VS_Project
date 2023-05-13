@@ -86,7 +86,24 @@
         <tr>
             <td class="style2" colspan="2">
                 <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
-                    style="background-color: #FFFF00" Text="Register" Width="20%" />
+                    style="background-color: #FFFF00" Text="Register" Width="20%" 
+                    ValidationGroup="a" />
+                <br />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                    ControlToValidate="TextBox2" ErrorMessage="Enter Name." ValidationGroup="a"></asp:RequiredFieldValidator>
+&nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+                    ControlToValidate="TextBox3" ErrorMessage="Enter Father Name." 
+                    ValidationGroup="a"></asp:RequiredFieldValidator>
+&nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
+                    ControlToValidate="TextBox4" ErrorMessage="Enter City." ValidationGroup="a"></asp:RequiredFieldValidator>
+&nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
+                    ControlToValidate="TextBox5" ErrorMessage="Enter Contact Number." 
+                    ValidationGroup="a"></asp:RequiredFieldValidator>
+&nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" 
+                    ControlToValidate="TextBox6" ErrorMessage="Enter Password." ValidationGroup="a"></asp:RequiredFieldValidator>
+&nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
+                    ControlToValidate="RadioButtonList1" ErrorMessage="Select User Role." 
+                    ValidationGroup="a"></asp:RequiredFieldValidator>
             </td>
         </tr>
     </table>

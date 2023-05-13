@@ -47,6 +47,7 @@ public partial class adminSearchUser : System.Web.UI.Page
         else
         {
             Label1.Text = "User Not Found";
+            TextBox1.Text = Label2.Text = Label3.Text = Label4.Text = Label5.Text = Label6.Text = Label7.Text = Label8.Text = null;
         }
     }
     protected void Button2_Click(object sender, EventArgs e)

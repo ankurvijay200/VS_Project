@@ -12,10 +12,10 @@
             <td class="style2" width="50%">
                 Enter User ID</td>
             <td class="style2" width="50%">
-                <asp:TextBox ID="TextBox1" runat="server" Width="60%"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" Width="60%" ValidationGroup="a"></asp:TextBox>
                 <asp:Button ID="Button1" runat="server" Text="Search" Width="20%" 
                     style="color: #FFFFFF; background-color: #0099FF" 
-                    onclick="Button1_Click" />
+                    onclick="Button1_Click" ValidationGroup="a" />
             </td>
         </tr>
         <tr>
@@ -23,6 +23,9 @@
                 User Id</td>
             <td class="style2" width="50%">
                 <asp:Label ID="Label1" runat="server"></asp:Label>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+                    ControlToValidate="TextBox1" ErrorMessage="Enter User Id" 
+                    style="color: #FF0000" ValidationGroup="a"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
