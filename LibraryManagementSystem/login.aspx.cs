@@ -35,13 +35,9 @@ public partial class login : System.Web.UI.Page
                 {
                     Response.Redirect("adminHome.aspx");
                 }
-                else if (ds.Tables[0].Rows[0][8].ToString() == "1")
-                {
-                    Response.Write("<script>alert('Welcome Teacher.')</script>");
-                }
                 else
                 {
-                    Response.Write("<script>alert('Welcome Student.')</script>");
+                    Response.Redirect("studentHome.aspx");
                 }
             }
             else
