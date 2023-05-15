@@ -43,6 +43,5 @@ public partial class studentupdateProfile : System.Web.UI.Page
         }
         Button2.Visible = false;
         Button1.Visible = TextBox2.Enabled = TextBox3.Enabled = TextBox5.Enabled = TextBox6.Enabled = TextBox7.Enabled = DropDownList5.Enabled = true;
-
     }
 }
