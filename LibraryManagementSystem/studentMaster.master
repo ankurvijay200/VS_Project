@@ -46,7 +46,8 @@
                                     NavigateUrl="studentIssuedBook.aspx">My Issued</asp:HyperLink>
                 </td>
                 <td class="style2">
-                                <asp:HyperLink ID="HyperLink3" runat="server" CssClass="style4">Request Book</asp:HyperLink>
+                                <asp:HyperLink ID="HyperLink3" runat="server" CssClass="style3" 
+                                    NavigateUrl="~/studentRequestBook.aspx">Request Book</asp:HyperLink>
                 </td>
                 <td class="style2">
                                 <asp:HyperLink ID="HyperLink4" runat="server" CssClass="style4">Contact</asp:HyperLink>
