@@ -6,7 +6,11 @@
     {
         text-align: center;
     }
-</style>
+        .style3
+        {
+            color: #CC0000;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="style1" border="1" cellpadding="2" cellspacing="1">
@@ -20,7 +24,8 @@
         <td width="50%">
             <asp:TextBox ID="TextBox1" runat="server" ValidationGroup="a" Width="60%"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
-                ControlToValidate="TextBox1" ErrorMessage="Enter user Id" ValidationGroup="a"></asp:RequiredFieldValidator>
+                ControlToValidate="TextBox1" ErrorMessage="Enter user Id" 
+                ValidationGroup="a" CssClass="style3"></asp:RequiredFieldValidator>
         </td>
     </tr>
     <tr>
@@ -30,7 +35,8 @@
             <asp:TextBox ID="TextBox2" runat="server" ValidationGroup="a" Width="60%" 
                 TextMode="Password"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-                ControlToValidate="TextBox2" ErrorMessage="Enter Password" ValidationGroup="a"></asp:RequiredFieldValidator>
+                ControlToValidate="TextBox2" ErrorMessage="Enter Password" 
+                ValidationGroup="a" CssClass="style3"></asp:RequiredFieldValidator>
         </td>
     </tr>
     <tr>
