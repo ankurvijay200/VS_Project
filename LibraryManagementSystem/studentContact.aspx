@@ -16,6 +16,8 @@
                             <AlternatingRowStyle BackColor="#00FFCC" />
                             <HeaderStyle BackColor="#CC0000" ForeColor="White" />
                         </asp:GridView>
+                        <br />
+                        <asp:Label ID="Label1" runat="server" style="color: #CC0000"></asp:Label>
                     </asp:View>
                     <asp:View ID="View2" runat="server">
                     </asp:View>

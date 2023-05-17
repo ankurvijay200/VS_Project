@@ -21,11 +21,7 @@
             color: #000000;
             text-decoration: none;
         }
-        .style4
-        {
-            color: #000000;
-        }
-    </style>
+        </style>
 </head>
 <body style="background-color: #00FFFF">
     <form id="form1" runat="server">
@@ -50,7 +46,8 @@
                                     NavigateUrl="~/studentRequestBook.aspx">Request Book</asp:HyperLink>
                 </td>
                 <td class="style2">
-                                <asp:HyperLink ID="HyperLink4" runat="server" CssClass="style4">Contact</asp:HyperLink>
+                                <asp:HyperLink ID="HyperLink4" runat="server" CssClass="style3" 
+                                    NavigateUrl="studentContact.aspx">Contact</asp:HyperLink>
                 </td>
                 <td class="style2">
                     <asp:HyperLink ID="HyperLink7" runat="server" CssClass="style3" 
