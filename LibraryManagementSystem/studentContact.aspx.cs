@@ -29,7 +29,7 @@ public partial class studentContact : System.Web.UI.Page
         }
         else
         {
-            Label1.Text = "Empty Inbox!";
+            Label1.Text = "Empty Inbox! ";
         }
     }
     protected void Button1_Click(object sender, EventArgs e)
