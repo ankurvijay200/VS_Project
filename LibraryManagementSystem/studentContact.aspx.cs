@@ -24,7 +24,8 @@ public partial class studentContact : System.Web.UI.Page
     protected void Button1_Click(object sender, EventArgs e)
     {
         MultiView1.ActiveViewIndex = 0;
-        Label4.Visible = false;
+        if(Label4.Visible)
+            Label4.Visible = false;
 
         string query = "select * from LibraryContact where rId=" + Convert.ToInt32(Session["libIdUser"].ToString());
         DataSet ds = new DataSet();
@@ -81,6 +82,22 @@ public partial class studentContact : System.Web.UI.Page
     protected void Button4_Click(object sender, EventArgs e)
     {
         MultiView1.ActiveViewIndex = 2;
-        Label4.Visible = false;
+        if(Label4.Visible)
+            Label4.Visible = false;
+
+        string query = "select * from LibraryContact where sId=" + Convert.ToInt32(Session["libIdUser"].ToString());
+        DataSet ds = new DataSet();
+        da = new SqlDataAdapter(query, con);
+        da.Fill(ds);
+
+        if (ds.Tables[0].Rows.Count > 0)
+        {
+            GridView2.DataSource = ds;
+            GridView2.DataBind();
+        }
+        else
+        {
+            Label1.Text = "Empty Inbox! ";
+        }
     }
 }

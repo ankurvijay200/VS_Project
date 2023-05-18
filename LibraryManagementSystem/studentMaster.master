@@ -29,7 +29,7 @@
         <table border="1" cellpadding="1" cellspacing="1" class="style1">
             <tr>
                 <td style="font-family: 'Arial Black'; font-size: xx-large; color: #FFFFFF; background-color: #CC0000" 
-                    colspan="7">
+                    colspan="8">
                     Library Management</td>
             </tr>
             <tr>
@@ -48,6 +48,10 @@
                 <td class="style2">
                                 <asp:HyperLink ID="HyperLink4" runat="server" CssClass="style3" 
                                     NavigateUrl="studentContact.aspx">Contact</asp:HyperLink>
+                </td>
+                <td class="style2">
+                                <asp:HyperLink ID="HyperLink8" runat="server" CssClass="style3" 
+                                    NavigateUrl="studentAllAdmins.aspx">All Admin</asp:HyperLink>
                 </td>
                 <td class="style2">
                     <asp:HyperLink ID="HyperLink7" runat="server" CssClass="style3" 

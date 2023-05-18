@@ -52,7 +52,7 @@
                                     To</td>
                                 <td width="50%">
                                     <asp:TextBox ID="TextBox1" runat="server" AutoPostBack="True" 
-                                        ontextchanged="TextBox1_TextChanged" Width="60%"></asp:TextBox>
+                                        ontextchanged="TextBox1_TextChanged" Width="60%" ValidationGroup="b"></asp:TextBox>
                                 </td>
                             </tr>
                             <tr>
@@ -79,14 +79,25 @@
                                         ControlToValidate="TextBox2" CssClass="style4" ErrorMessage="Enter Message. " 
                                         ValidationGroup="a"></asp:RequiredFieldValidator>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-                                        ControlToValidate="TextBox1" CssClass="style4" ErrorMessage="Reciever's Id"></asp:RequiredFieldValidator>
+                                        ControlToValidate="TextBox1" CssClass="style4" 
+                                        ErrorMessage="Reciever's Id" ValidationGroup="b"></asp:RequiredFieldValidator>
                                 </td>
                             </tr>
                         </table>
                         <br />
                     </asp:View>
                     <asp:View ID="View3" runat="server">
-                        hey
+                        <asp:GridView ID="GridView2" runat="server" Width="100%" 
+                            AutoGenerateColumns="False">
+                            <AlternatingRowStyle BackColor="#00FFCC" />
+                            <HeaderStyle BackColor="#CC0000" ForeColor="White" />
+                            <Columns>
+                                <asp:BoundField HeaderText="Reciever's Id" DataField="rId"/>                                                      
+                                <asp:BoundField HeaderText="Reciever's Name" DataField="rName"/>                                                      
+                                <asp:BoundField HeaderText="Date" DataField="date"/>                                                      
+                                <asp:BoundField HeaderText="Message" DataField="msg"/>                                                                                      
+                            </Columns>
+                        </asp:GridView>
                     </asp:View>
                 </asp:MultiView>
             </td>
