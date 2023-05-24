@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterAfterLogin.master.cs" Inherits="masterAfterLogin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+        .style4
+        {
+            color: #000000;
+        }
+        .style5
+        {
+            color: #000000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-color: #00FFFF">
+    <form id="form1" runat="server">
+    <table border="1" cellpadding="2" cellspacing="1" class="style1">
+        <tr>
+            <td colspan="6" 
+                style="font-size: xx-large; font-family: 'Arial Black'; color: #FFFFFF; background-color: #CC0000">
+                Hotel Management System</td>
+        </tr>
+        <tr>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink6" runat="server" CssClass="style5" 
+                    NavigateUrl="~/adminHome.aspx">Home</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink5" runat="server">[HyperLink5]</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink4" runat="server">[HyperLink4]</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink3" runat="server">[HyperLink3]</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink2" runat="server" CssClass="style4">[HyperLink2]</asp:HyperLink>
+            </td>
+            <td class="style2">
+                <asp:HyperLink ID="HyperLink1" runat="server" CssClass="style5" 
+                    NavigateUrl="~/logout.aspx">Logout</asp:HyperLink>
+            </td>
+        </tr>
+    </table>
+<div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
