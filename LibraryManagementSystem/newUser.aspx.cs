@@ -22,8 +22,14 @@ public partial class newUser : System.Web.UI.Page
         DataSet ds = new DataSet();
         da = new SqlDataAdapter(Nquery, con);
         da.Fill(ds);
-
-        TextBox1.Text = (Convert.ToInt32(ds.Tables[0].Rows[0][0].ToString()) + 1).ToString();
+        if (ds.Tables[0].Rows.Count > 0)
+        {
+            TextBox1.Text = (Convert.ToInt32(ds.Tables[0].Rows[0][0].ToString()) + 1).ToString();
+        }
+        else
+        {
+            TextBox1.Text = (101).ToString(); ;
+        }
     }
     protected void Button1_Click(object sender, EventArgs e)
     {

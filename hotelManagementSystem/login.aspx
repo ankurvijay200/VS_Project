@@ -63,7 +63,8 @@
             <tr>
                 <td class="style2" colspan="2" style="text-align: center">
                     <asp:HyperLink ID="HyperLink1" runat="server" 
-                        style="color: #3333FF; text-decoration: underline">New user ?</asp:HyperLink>
+                        style="color: #3333FF; text-decoration: underline" 
+                        NavigateUrl="~/newUserRegister.aspx">New user ?</asp:HyperLink>
                 </td>
             </tr>
         </table>
