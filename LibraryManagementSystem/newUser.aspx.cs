@@ -46,7 +46,6 @@ public partial class newUser : System.Web.UI.Page
         DataSet ds = new DataSet();
         da = new SqlDataAdapter(Nquery, con);
         da.Fill(ds);
-
         TextBox1.Text = (Convert.ToInt32(ds.Tables[0].Rows[0][0].ToString()) + 1).ToString();
     }
 }
